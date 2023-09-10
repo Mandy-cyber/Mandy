@@ -51,15 +51,10 @@ function App() {
           "https://github.com/Mandy-cyber" : 
           "https://www.linkedin.com/in/amanda-rodriques-725613217/"
         ;
-        window.open(url, "_blank");
+        window.open(url, "_blank")    
       } else {
         return <p>did you mean <b><code>view -github</code></b> or <b><code>view -linkedin</code></b> ?</p>
       }
-    },
-
-    // SEE RESUME
-    resume: () => {
-      window.open("https://drive.google.com/file/d/1E7OWa_yZtrIkPn9Zk9T02iRZx3no2Aje/view?usp=sharing", "_blank")
     }
   };
 
