@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ReactTerminal } from "react-terminal";
 import {colors} from './style/colors.ts';
 import { HomePageBody } from './App.styles.ts';
-import { PAGES } from "./constants.ts";
+import { PAGES, EXTERNAL_PAGES } from "./constants.ts";
 import { 
   welcomeMessage, 
   listPages, 
@@ -16,7 +16,7 @@ function App() {
 
   const commands = {
     // GENERAL
-    whoami: "mandy-cyber",
+    whoami: "stranger",
     pwd: pwd,
     help: helpMessage,
 
@@ -39,6 +39,21 @@ function App() {
         } else {
           return <p>bash: cd: {directory}: No such file or directory</p>
         }
+      }
+    },
+
+    // VIEW EXTERNAL PAGES
+    view: (site: string) => {
+      site = site.toLowerCase();
+      if (EXTERNAL_PAGES.includes(site)) {
+        const url: string = 
+          site === "-github" ? 
+          "https://github.com/Mandy-cyber" : 
+          "https://www.linkedin.com/in/amanda-rodriques-725613217/"
+        ;
+        window.open(url, "_blank")    
+      } else {
+        return <p>did you mean <b><code>view -github</code></b> or <b><code>view -linkedin</code></b> ?</p>
       }
     }
   };
