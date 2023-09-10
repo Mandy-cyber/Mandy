@@ -4,9 +4,13 @@ const PAGES = [
     'about',
     'projects',
     'experience',
-    'contact',
-    'joke'
+    'recipes',
+    'contact'
 ]
 
+const EXTERNAL_PAGES = [
+    '-github',
+    '-linkedin'
+]
 
-export { PAGES };
+export { PAGES, EXTERNAL_PAGES };
