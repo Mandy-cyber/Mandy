@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ReactTerminal } from "react-terminal";
 import {colors} from './style/colors.ts';
-import { HomePageBody } from './App.styles.ts';
+import { HomePageBody, TerminalView, WebsiteView } from './App.styles.ts';
 import { PAGES, EXTERNAL_PAGES } from "./constants.ts";
 import { 
   welcomeMessage, 
@@ -13,7 +13,7 @@ function App() {
   const ROOT_PAGE: string = "~";
   const [pwd, setPwd] = useState(ROOT_PAGE);
 
-
+  
   const commands = {
     // GENERAL
     whoami: "stranger",
@@ -58,23 +58,30 @@ function App() {
     }
   };
 
+
   return (
     <>
     <HomePageBody>
-  
-        <ReactTerminal
-            welcomeMessage={welcomeMessage}
-            prompt={"stranger@mandy-world:" + pwd + " $"}
-            commands={commands}
-            themes={{
-              "custom-theme": {
-                themeBGColor: colors.DARK_GRAY,
-                themeColor: colors.LIGHT_PURPLE,
-                themePromptColor: colors.PINK
-              }
-            }}
-            theme="custom-theme"
-        />
+
+        <TerminalView>
+          <ReactTerminal
+              welcomeMessage={welcomeMessage}
+              prompt={"stranger@mandy-world:" + pwd + " $"}
+              commands={commands}
+              themes={{
+                "custom-theme": {
+                  themeBGColor: colors.DARK_GRAY,
+                  themeColor: colors.LIGHT_PURPLE,
+                  themePromptColor: colors.PINK
+                }
+              }}
+              theme="custom-theme"
+          />
+        </TerminalView>
+
+        <WebsiteView>
+          
+        </WebsiteView>
 
     </HomePageBody>
   </>
