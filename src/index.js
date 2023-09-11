@@ -4,13 +4,18 @@ import './index.css';
 import App from './App.tsx';
 import reportWebVitals from './reportWebVitals';
 import { TerminalContextProvider } from "react-terminal";
+import {NextUIProvider} from "@nextui-org/react";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TerminalContextProvider>
-      <App/>
-    </TerminalContextProvider>
+    <NextUIProvider>
+      <TerminalContextProvider>
+      <div className="w-screen h-screen dark text-foreground bg-background p-8 flex items-start justify-center">
+        <App/>
+      </div>
+      </TerminalContextProvider>
+    </NextUIProvider>
   </React.StrictMode>
 );
 
