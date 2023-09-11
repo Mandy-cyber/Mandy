@@ -18,32 +18,45 @@ const listPages = (
 
 
 const helpMessage = (
-    <pre>
+    <div>
+        <br/>
         <b>help: help</b><br />
         Display information about builtin commands
 
         <br/><br/>
         <b>Commands:</b>
         <br/>All the commands you can run in this terminal<br/>
-        <br/> __ <code>cd directory</code>
+        <br/> __ <b><code>cd [directory]</code></b>
         <br/> |___ change to the given directory
         <br/> 
-        <br/> __ <code>ls</code>
+        <br/> __ <b><code>ls</code></b>
         <br/> |___ list visible files and directories
         <br/>
-        <br/> __ <code>pwd</code>
+        <br/> __ <b><code>clear</code></b>
+        <br/> |___ clear the terminal
+        <br/>
+        <br/> __ <b><code>pwd</code></b>
         <br/> |___ echo the present working directory
         <br/>
-        <br/> __ <code>whoami</code>
+        <br/> __ <b><code>whoami</code></b>
         <br/> |___ see who you are...
+        {/* <br/>
+        <br/> __ <b><code>joke</code></b>
+        <br/> |___ tell an (admittedly awful) joke */}
         <br/>
-        <br/> __ <code>clear</code>
-        <br/> |___ clears the terminal
+        <br/> __ <b><code>resume</code></b>
+        <br/> |___ opens the resume of Mandy-cyber
         <br/>
-        <br/> __ <code>help</code>
+        <br/> __ <b><code>view [-github, -linkedin]</code></b>
+        <br/> |___ go to my GitHub or LinkedIn profile
+
+
+
+        <br/><br/>
+        <br/> __ <b><code>help</code></b>
         <br/> |___ re-display this information
 
-    </pre>
+    </div>
 );
 
 

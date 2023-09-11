@@ -1,7 +1,7 @@
 const PAGES = [
     '..',
     'home',
-    'about',
+    'about-mandy',
     'projects',
     'experience',
     'recipes',
