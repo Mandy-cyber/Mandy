@@ -8,7 +8,6 @@ import {NextUIProvider} from "@nextui-org/react";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <NextUIProvider>
       <TerminalContextProvider>
       <div className="w-screen h-screen dark text-foreground bg-background p-8 flex items-start justify-center">
@@ -16,7 +15,6 @@ root.render(
       </div>
       </TerminalContextProvider>
     </NextUIProvider>
-  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
