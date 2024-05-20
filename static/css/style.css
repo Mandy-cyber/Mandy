@@ -1,0 +1,55 @@
+@import "constants.css";
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* SECTION STYLING */
+/* ------------------------------------------------- */
+
+.app-section {
+    flex: 0.5;
+}
+
+.app-section-1 {
+    background-color: pink;
+}
+
+.app-section-2 {
+    background-color: plum;
+}
+
+.open-app-section {
+    flex: 4;
+    background-color: antiquewhite;
+}
+
+.widget-section {
+    flex: 2;
+    background-color: indianred;
+}
+
+.footer-bar {
+    width: 100%;
+    background-color: aquamarine;
+}
+
+/* SUB-SECTION STYLING */
+/* ------------------------------------------------- */
+
+
+/* IMAGE STYLING */
+/* ------------------------------------------------- */
+
+#profile-pic {
+    width: 50%;
+    border-radius: 50%;
+}
