@@ -9,17 +9,40 @@
 <body>
 
     <div class="container">
-        <div class="item app-section app-section-1">App column 1</div>
-        <div class="item app-section app-section-2">App column 2</div>
-        <div class="item open-app-section">Open app section</div>
-        <div class="item widget-section">
-            Widget section
-            <div class="circle-widget">
+        <div id="app-section-1" class="item app-section">
+            <img id="trash" class="app-icon app-sec-icon" src="static/imgs/basic_app_icon.png" alt="App icon for the Trash section">
+            <img id="profile" class="app-icon app-sec-icon" src="static/imgs/basic_app_icon.png" alt="App icon for the Profile section">
+            <img id="terminal" class="app-icon app-sec-icon" src="static/imgs/basic_app_icon.png" alt="App icon for the Terminal section">
+            <img id="mail" class="app-icon app-sec-icon" src="static/imgs/basic_app_icon.png" alt="App icon for the Mail section">
+            <img id="freelance" class="app-icon app-sec-icon" src="static/imgs/basic_app_icon.png" alt="App icon for the Freelance & Etsy section">
+        </div>
+        <div id="app-section-2" class="item app-section">
+            <img id="notepad" class="app-icon app-sec-icon" src="static/imgs/basic_app_icon.png" alt="App icon for the Notepad section">
+        </div>
+
+
+        <div id="open-app-section" class="item">
+            <div id="toolbar" class="bars">Toolbar</div>
+        </div>
+
+
+        <div id="widget-section" class="item">
+            <div id="theme-bar" class="bars">Theme bar</div>
+            <div id="circle-widget">
                 <img id="profile-pic" src="static/imgs/mandy_drawing.png" alt="A drawing of me wearing headphones with a heart on my head. Drawing by Annabelle Chung!">
             </div>
+
+            <div id="two-apps-section">
+                <img id="experience" class="app-icon widget-sec-icon" src="static/imgs/basic_app_icon.png" alt="App icon for the Work Experience section">
+                <img id="projects" class="app-icon widget-sec-icon" src="static/imgs/basic_app_icon.png" alt="App icon for the Projects section">
+            </div>
         </div>
-        <div class="item footer-bar">Page 'Footer'</div>
+
+
+        <div id="footer-bar" class="item">Page 'Footer'</div>
     </div>
+
+    <script src="static/js/index.js"></script>
     
 </body>
 </html>
