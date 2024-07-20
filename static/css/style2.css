@@ -1,3 +1,5 @@
+
+
 @import "constants.css";
 @import "responsive.css";
 @import "assets.css";
@@ -11,40 +13,19 @@ body {
     background-color: white;
 }
 
-/* CAROUSEL STYLING */
-/* ------------------------------------------------- 
-thank you to 
-*/
 
-.carousel {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    padding: 0;
-    /* Hide horizontal scrollbar */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;     /* Firefox */
-}
 
-.carousel::-webkit-scrollbar {
-    display: none;  /* Chrome, Safari, and Opera */
-}
-
-.carousel-page {
-    display: flex;
-    flex-direction: row;
-    flex: none;
-    align-items: flex-start;
-    scroll-snap-align: start;
-    box-sizing: border-box;
-    gap: 0.5em;
-    padding: 1em;
-    width: 100vw;
-}
-
-/* BOX STYLING */
+/* CONTAINER & BOX STYLING */
 /* ------------------------------------------------- */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0.5em;
+    padding-top: 3em;
+}
 
 .box {
     display: flex;

@@ -1,5 +1,12 @@
+/* Responsive styling for mobile */
+/* Come back and fix this LOL */
 @media screen and (max-width: 550px) {
-    .container {
+    .carousel {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-page {
         display: flex;
         flex-direction: column;
     }
