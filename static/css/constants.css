@@ -1,3 +1,17 @@
 :root {
     --main-bg-color: white;
 }
+
+/* come back and get this font to work lol */
+@font-face {
+    font-family: "Studio";
+    src:url('static/fonts/studio/Studio-Bold.woff') format('woff'),
+        url('static/fonts/studio/Studio-Bold.ttf') format('truetype');
+}
+
+.itim-regular {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
