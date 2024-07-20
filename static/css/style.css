@@ -20,6 +20,7 @@ thank you to
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
     scroll-behavior: smooth;
     padding: 0;
     /* Hide horizontal scrollbar */
