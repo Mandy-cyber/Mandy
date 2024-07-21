@@ -11,6 +11,13 @@
     text-align: center;
 }
 
+.sticky {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+}
+
 /* NAVBAR STYLING
 -------------------------------------------------
 Adjusted from: https://www.geeksforgeeks.org/how-to-make-responsive-navbar-menu-in-css/
@@ -111,6 +118,10 @@ ul li a:hover {
     display: flex;
     flex-direction: row;
     margin-top: 2vh;
+}
+
+#foobar-box {
+    margin-top: 8vh;
 }
 
 #skills-box {

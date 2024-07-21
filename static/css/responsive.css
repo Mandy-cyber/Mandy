@@ -39,6 +39,10 @@
     /* tech page stuff */
     /* ------------------------- */
 
+    #tech-body {
+        padding-top: 10px;
+    }
+
     /* navbar (more on tech.css -> not sure why wont work when i move it here) */
     #navbar-logo {
         display: none;
@@ -46,6 +50,11 @@
 
     nav {
         padding: 1vh 2vh;
+    }
+
+
+    #foobar-box {
+        margin-top: 0vh !important;
     }
 
     /* Swap foobar image */

@@ -14,16 +14,16 @@
 <body id="tech-body">
 
     <!-- NAVIGATION -->
-    <nav>
+    <nav id="tech-navbar">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
         <img id="navbar-logo" src="static/imgs/logo.png" alt="Mandilocs logo">
         <ul>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Experience</a></li>
+            <li><a href="#skills-box">Skills</a></li>
+            <li><a href="#education-box">Education</a></li>
+            <li><a href="#experience-box">Experience</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Organizations</a></li>
         </ul>
@@ -34,13 +34,39 @@
 
         <!-- row1: foobar -->
         <div class="box large" id="foobar-box">
-            <img id="foobar-img"src="static/imgs/foobar.png" alt="Foobar -'every programming class ever'">
+            <img id="foobar-img-desktop" class="foobar-img"src="static/imgs/foobar.png" alt="Foobar -'every programming class ever'">
+            <img id="foobar-img-mobile" class="foobar-img"src="static/imgs/foobar-mobile.png" alt="Foobar -'every programming class ever'">
         </div>
 
         <!-- row2: skills & education -->
         <div id="tech-row2" class="tech-row">
             <div class="box" id="skills-box">
-                <h2 class="box-h2">Skills</h3>
+
+                <div id="skills-box-vertical">
+                    <h2 class="box-h2">Technical Skills</h3>
+                    <div id="skill-badges">
+
+                        <span class="badge tooltip skill-os">Linux<span class="tooltiptext">tt</span></span>
+                        <span class="badge tooltip skill-os">Windows<span class="tooltiptext">tt</span></span>
+                        <span class="badge tooltip skill-os">MacOS<span class="tooltiptext">tt</span></span>
+
+                        <span class="badge tooltip skill-lang">Python<span class="tooltiptext">tt</span></span>
+                        <span class="badge tooltip skill-lang">C<span class="tooltiptext">tt</span></span>
+                        <span class="badge tooltip skill-lang">Java & JUnit5<span class="tooltiptext">tt</span></span>
+                        <span class="badge tooltip skill-lang">HTML<span class="tooltiptext">tt</span></span>
+                        <span class="badge tooltip skill-lang">CSS<span class="tooltiptext">tt</span></span>
+                        <span class="badge tooltip skill-lang">SQLite<span class="tooltiptext">tt</span></span>
+                        <span class="badge tooltip skill-lang">Racket<span class="tooltiptext">tt</span></span>
+                        <span class="badge tooltip skill-lang">JavaScript/TS<span class="tooltiptext">tt</span></span>
+
+                        <span class="badge tooltip skill-tool">GitHub/GitLab<span class="tooltiptext">tt</span></span>
+                        <span class="badge tooltip skill-tool">MongoDB<span class="tooltiptext">tt</span></span>
+                        <span class="badge tooltip skill-tool">VSCode<span class="tooltiptext">tt</span></span>
+                        <span class="badge tooltip skill-tool">Amazon S3<span class="tooltiptext">tt</span></span>
+                        <span class="badge tooltip skill-tool">Vim<span class="tooltiptext">tt</span></span>
+                    </div>
+                </div>
+
             </div>
             <div class="box" id="education-box">
                 <h2 class="box-h2">Education</h3>

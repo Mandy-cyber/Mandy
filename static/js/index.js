@@ -5,34 +5,48 @@ function scrollCarousel(direction) {
     container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
 }
 
+window.onscroll = function() {stickNavbar()};
+        
+var navbar = document.getElementById("tech-navbar");
+var sticky = navbar.offsetTop;
 
-document.addEventListener('DOMContentLoaded', () => {
-    const box10 = document.getElementById('box10');
-    const element = document.getElementById('hover-spotify');
-
-    let hoverTimeout;
-
-    function onSpotifyIframeApiReady(IFrameAPI) {
-        const options = {
-            uri: 'spotify:track:2OFvClbKLxtHeVMb3O1pOX?utm_source=generator&theme=0'
-        };
-        const callback = (EmbedController) => {};
-        IFrameAPI.createController(element, options, callback);
+function stickNavbar() {
+    if (window.scrollY || window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
     }
+    else {
+        navbar.classList.remove("sticky");
+    }
+}
 
-    // Load Spotify API and initialize after the window loads
-    window.onSpotifyIframeApiReady = onSpotifyIframeApiReady;
 
-    // Show Spotify embed on hover
-    box10.addEventListener('mouseenter', () => {
-        clearTimeout(hoverTimeout); // Clear any existing timeout when hovering
-        element.style.display = 'block';
-    });
+// document.addEventListener('DOMContentLoaded', () => {
+//     const box10 = document.getElementById('box10');
+//     const element = document.getElementById('hover-spotify');
 
-    // Hide Spotify embed after a delay when mouse leaves
-    box10.addEventListener('mouseleave', () => {
-        hoverTimeout = setTimeout(() => {
-            element.style.display = 'none';
-        }, 500); // Adjust the delay as needed (500ms = 0.5s)
-    });
-});
+//     let hoverTimeout;
+
+//     function onSpotifyIframeApiReady(IFrameAPI) {
+//         const options = {
+//             uri: 'spotify:track:2OFvClbKLxtHeVMb3O1pOX?utm_source=generator&theme=0'
+//         };
+//         const callback = (EmbedController) => {};
+//         IFrameAPI.createController(element, options, callback);
+//     }
+
+//     // Load Spotify API and initialize after the window loads
+//     window.onSpotifyIframeApiReady = onSpotifyIframeApiReady;
+
+//     // Show Spotify embed on hover
+//     box10.addEventListener('mouseenter', () => {
+//         clearTimeout(hoverTimeout); // Clear any existing timeout when hovering
+//         element.style.display = 'block';
+//     });
+
+//     // Hide Spotify embed after a delay when mouse leaves
+//     box10.addEventListener('mouseleave', () => {
+//         hoverTimeout = setTimeout(() => {
+//             element.style.display = 'none';
+//         }, 500); // Adjust the delay as needed (500ms = 0.5s)
+//     });
+// });
