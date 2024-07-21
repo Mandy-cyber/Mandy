@@ -5,12 +5,12 @@
     /* ------------------------- */
     .carousel {
         flex-direction: column;
-        scroll-snap-type: proximity;
     }
 
     .carousel-page {
         flex-direction: column !important;
         margin-bottom: -2vh !important;
+        scroll-snap-align: none !important;
     }
 
     #box1 {
@@ -75,6 +75,9 @@
     /* ------------------------- */
     .carousel {
         scroll-snap-stop: always;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
     }
     
     /* bring comic pages lower on the page */

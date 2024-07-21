@@ -7,6 +7,10 @@
     font-family: 'Glacial Indifference', sans-serif;
 }
 
+.box-h2 {
+    text-align: center;
+}
+
 /* NAVBAR STYLING
 -------------------------------------------------
 Adjusted from: https://www.geeksforgeeks.org/how-to-make-responsive-navbar-menu-in-css/
@@ -130,8 +134,7 @@ ul li a:hover {
     flex-direction: column;
     justify-content: center;
     border-color: transparent;
-    align-items: center;
-    text-align: center;
+    margin: 1.25em 0;
 }
 
 /* EXPERIENCE BOX ELEMENT STYLING */
@@ -142,7 +145,7 @@ ul li a:hover {
     height: 100px;
     overflow: hidden;
     border-radius: 50%;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 .exp-img {
@@ -162,4 +165,79 @@ ul li a:hover {
 
 .exp-pos {
     font-style: italic;
+}
+
+/* SKILLS BOX ELEMENT STYLING */
+/* ------------------------------------------------- */
+
+#skills-box-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#skill-badges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1.5vh;
+}
+
+.badge {
+    margin: 0.5em;
+    background-color: green;
+    color: #fff;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.skill-os {
+    background-color: #ff94c1;
+}
+
+.skill-lang {
+    background-color: #7abcf5;
+}
+
+.skill-tool {
+    background-color: #6bcf4f;
+}
+
+/* tooltip styling adjusted from 
+https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_arrow_bottom */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+  
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
