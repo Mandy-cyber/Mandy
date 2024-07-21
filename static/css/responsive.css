@@ -37,6 +37,10 @@
 /* DESKTOP & TABLET */
 /* ---------------------------------------------------------------- */
 @media screen and (min-width: 551px) {
+    .carousel {
+        scroll-snap-stop: always;
+    }
+    
     .carousel-page {
         /* bring comic pages lower on the page */
         margin-top: 20vh;
