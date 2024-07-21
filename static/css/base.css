@@ -8,4 +8,10 @@ body {
     margin: 0;
     font-family: "Itim", "PT Sans", Calibri, Tahoma, sans-serif;
     background-color: white;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }

@@ -1,36 +1,37 @@
 /* MOBILE */
 /* ---------------------------------------------------------------- */
 @media screen and (max-width: 550px) {
-    /* make all the comics show on one page + adjusting sizing */
     .carousel {
-        display: flex;
         flex-direction: column;
     }
 
     .carousel-page {
-        display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
+        margin-bottom: -2vh !important;
     }
 
     #box1 {
-        border-style: hidden;
+        margin-top: 25vh;
+        margin-bottom: 42vh;
+    }
+
+    .box {
+        width: 100% !important;
+    }
+
+    #box1 {
         padding-top: 1em;
         padding-bottom: 0em !important;
     }
 
-    /* Switch text and <p> sizing */
-    #hey-text {
-        font-size: 8vw;
+    /* Swap animation gif */
+    #hey-im-mobile {
+        display: block;
     }
 
-    .switch-text {
-        font-size: 8vw;
+    #hey-im-desktop {
+        display: none;
     }
-
-    .switch-animation {
-        margin-left: 0rem !important;
-    }
-
 }
 
 /* DESKTOP & TABLET */
@@ -41,12 +42,12 @@
         margin-top: 20vh;
     }
 
-    /* Switch text and <p> sizing */
-    #hey-text {
-        font-size: 10vw;
+    /* Swap animation gif */
+    #hey-im-mobile {
+        display: none;
     }
 
-    .switch-text {
-        font-size: 10vw;
+    #hey-im-desktop {
+        display: block;
     }
 }
