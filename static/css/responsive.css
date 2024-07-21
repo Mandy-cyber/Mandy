@@ -127,11 +127,16 @@
     }
 
     .badge {
-        font-size: smaller !important;
+        font-size: 1em !important;
     }
 
     #education-code, #preview-button {
         display: none !important;
+    }
+
+    zero-md {
+        display: block !important;
+        border: none !important;
     }
 }
 

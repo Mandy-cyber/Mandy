@@ -38,6 +38,10 @@ nav {
     height: auto;
 }
 
+#navbar-a {
+    text-decoration: none;
+}
+
 ul {
     display: flex;
     list-style: none;
@@ -75,7 +79,7 @@ ul li a:hover {
 .tech-row {
     display: flex;
     flex-direction: row;
-    margin-top: 2vh;
+    margin-top: 3vh;
 }
 
 #foobar-box {
