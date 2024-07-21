@@ -32,6 +32,21 @@
     #hey-im-desktop {
         display: none;
     }
+
+    /* navbar (more on tech.css -> not sure why wont work when i move it here) */
+    #navbar-logo {
+        display: none;
+    }
+
+    nav {
+        padding: 1vh 2vh;
+    }
+
+    /* tech page */
+    .tech-row {
+        flex-direction: column !important;
+    }
+
 }
 
 /* DESKTOP & TABLET */
@@ -53,5 +68,10 @@
 
     #hey-im-desktop {
         display: block;
+    }
+
+    /* tech page */
+    .exp-box {
+        flex: 1 1 calc(33.333% - 1em);
     }
 }

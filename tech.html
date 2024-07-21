@@ -6,13 +6,162 @@
     <meta name="description" content="Mandy's tech skills, experiences, and projects">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="static/imgs/logo.png">
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <title>Mandyland: Tech</title>
+    <link rel="stylesheet" href="static/css/tech.css">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Mandyland - Tech</title>
 </head>
-<body>
+<body id="tech-body">
+
+    <!-- NAVIGATION -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img id="navbar-logo" src="static/imgs/logo.png" alt="Mandilocs logo">
+        <ul>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Organizations</a></li>
+        </ul>
+    </nav>
+
+    <!-- BOXES -->
+    <div class="container">
+
+        <!-- row1: foobar -->
+        <div class="box large" id="foobar-box">
+            <img id="foobar-img"src="static/imgs/foobar.png" alt="Foobar -'every programming class ever'">
+        </div>
+
+        <!-- row2: skills & education -->
+        <div id="tech-row2" class="tech-row">
+            <div class="box" id="skills-box">
+                <h2 class="box-h2">Skills</h3>
+            </div>
+            <div class="box" id="education-box">
+                <h2 class="box-h2">Education</h3>
+            </div>
+        </div>
+
+        <!-- row3: experience-title -->
+        <div id="tech-row3" class="tech-row">
+            <div class="box large" id="experience-box">
+                <h2 class="box-h2">Experience</h3>
+            </div>
+        </div>
+
+        <!-- row4: experience-grid -->
+        <div id="tech-row4" class="tech-row">
+            <div id="experience-grid">
+
+                <div id="exp-box-1" class="box exp-box">
+                    <div class="exp-img-container">
+                        <img class="exp-img" src="static/imgs/logos/johndeere.png" alt="">
+                    </div>
+                    <p class="exp-dur">June 2024 - Present</p>
+                    <h3 class="exp-job">John Deere Financial</h3>
+                    <p class="exp-pos">Cybersecurity Intern</p>
+                </div>
+
+                <div id="exp-box-2" class="box exp-box">
+                    <div class="exp-img-container">
+                        <img class="exp-img" src="static/imgs/logos/nf.png" alt="">
+                    </div>
+                    <p class="exp-dur">May 2024 - Present</p>
+                    <h3 class="exp-job">Netflix x Formation</h3>
+                    <p class="exp-pos">Software Engineer Fellow</p>
+                </div>
+
+                <div id="exp-box-3" class="box exp-box">
+                    <div class="exp-img-container">
+                        <img class="exp-img" src="static/imgs/logos/hbp.png" alt="">
+                    </div>
+                    <p class="exp-dur">April 2023 - Present</p>
+                    <h3 class="exp-job">HackBeanPot</h3>
+                    <p class="exp-pos">Software Engineer</p>
+                </div>
+
+                <div id="exp-box-4" class="box exp-box">
+                    <div class="exp-img-container">
+                        <img class="exp-img" src="static/imgs/logos/recordedfuture.png" alt="">
+                    </div>
+                    <p class="exp-dur">January 2024 - May 2024</p>
+                    <h3 class="exp-job">Recorded Future</h3>
+                    <p class="exp-pos">Data Science Intern</p>
+                </div>
+
+                <div id="exp-box-5" class="box exp-box">
+                    <div class="exp-img-container">
+                        <img class="exp-img" src="static/imgs/logos/northeastern.png" alt="">
+                    </div>
+                    <p class="exp-dur">September 2023 - December 2023</p>
+                    <h3 class="exp-job">NU: Khoury College</h3>
+                    <p class="exp-pos">TA - Fund. of CompSci II</p>
+                </div>
+
+                <div id="exp-box-6" class="box exp-box">
+                    <div class="exp-img-container">
+                        <img class="exp-img" src="static/imgs/logos/recordedfuture.png" alt="">
+                    </div>
+                    <p class="exp-dur">June 2023 - August 2023</p>
+                    <h3 class="exp-job">Recorded Future</h3>
+                    <p class="exp-pos">Data Science Intern</p>
+                </div>
+
+                <div id="exp-box-7" class="box exp-box">
+                    <div class="exp-img-container">
+                        <img class="exp-img" src="static/imgs/logos/northeastern.png" alt="">
+                    </div>
+                    <p class="exp-dur">January 2023 - June 2023</p>
+                    <h3 class="exp-job">NU: Khoury College</h3>
+                    <p class="exp-pos">TA - Fund. of CompSci I</p>
+                </div>
+
+                <div id="exp-box-8" class="box exp-box">
+                    <div class="exp-img-container">
+                        <img class="exp-img" src="static/imgs/logos/starapple.png" alt="">
+                    </div>
+                    <p class="exp-dur">December 2021 - August 2022</p>
+                    <h3 class="exp-job">StarApple Analytics</h3>
+                    <p class="exp-pos">Data Analyst Intern</p>
+                </div>
+
+                <div id="exp-box-9" class="box exp-box">
+                    <!-- <img class="exp-img" src="" alt=""> -->
+                    <h3></h3>
+                    <p class="exp-pos"></p>
+                    <p class="exp-dur"></p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- row5: projects-title & organizations-title -->
+        <!-- <div id="tech-row5" class="tech-row">
+            <div class="box" id="projects-box-1">
+                <h2 class="box-h2">Projects</h3>
+            </div>
+            <div class="box" id="orgs-box-1">
+                <h2 class="box-h2">Organizations</h3>
+            </div>
+        </div> -->
+
+        <!-- row6: projects-content & organizations-content -->
+        <!-- <div id="tech-row6" class="tech-row">
+            <div class="box" id="projects-box-2">
+                will become carousel
+            </div>
+            <div class="box" id="orgs-box-2">
+                will have organizations in it
+            </div>
+        </div> -->
+
+
+    </div>
     
 
     <script src="static/js/index.js"></script>

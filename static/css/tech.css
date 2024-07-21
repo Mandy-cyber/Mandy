@@ -1,0 +1,165 @@
+@import "base.css";
+
+/* BODY STYLING */
+/* ------------------------------------------------- */
+
+#tech-body {
+    font-family: 'Glacial Indifference', sans-serif;
+}
+
+/* NAVBAR STYLING
+-------------------------------------------------
+Adjusted from: https://www.geeksforgeeks.org/how-to-make-responsive-navbar-menu-in-css/
+------------------------------------------------- */
+
+nav {
+    background-color: white;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid black;
+}
+
+#navbar-logo {
+    width: 10%;
+    height: auto;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-right: 5vw;
+}
+
+ul li a {
+    color: black;
+    font-size: large;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: palevioletred;
+}
+
+.checkbtn {
+    font-size: 2em;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 550px) {
+    .checkbtn {
+        display: block;
+        order: 1;
+    }
+
+    ul {
+        position: fixed;
+        top: 15vh;
+        right: -100%;
+        background-color: white;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+    }
+
+    ul li {
+        margin: 2vh 0;
+    }
+
+    ul li a {
+        font-size: 1.5em;
+    }
+
+    #check:checked ~ ul {
+        right: 0;
+    }
+}
+
+
+/* BOX STYLING */
+/* ------------------------------------------------- */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em;
+}
+
+.tech-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+}
+
+#skills-box {
+    flex: 1 1 calc(40% - 1em);
+    margin-right: 2vw;
+}
+
+#education-box {
+    flex: 1 1 calc(60% - 1em);
+}
+
+#experience-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.exp-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-color: transparent;
+    align-items: center;
+    text-align: center;
+}
+
+/* EXPERIENCE BOX ELEMENT STYLING */
+/* ------------------------------------------------- */
+
+.exp-img-container {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.exp-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.exp-dur {
+    margin: -1em 0;
+    font-size: 0.75em;
+}
+
+.exp-job {
+    margin-bottom: -0.3em;
+}
+
+.exp-pos {
+    font-style: italic;
+}

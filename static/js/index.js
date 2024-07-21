@@ -36,28 +36,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500); // Adjust the delay as needed (500ms = 0.5s)
     });
 });
-
-
-
-
-// window.onSpotifyIframeApiReady = (IFrameAPI) => {
-//     const box10 = document.getElementById('box10');
-//     const element = document.getElementById('hover-spotify');
-
-//     const options = {
-//         uri: 'spotify:track:2OFvClbKLxtHeVMb3O1pOX?utm_source=generator&theme=0'
-//     };
-//     const callback = (EmbedController) => {};
-//     IFrameAPI.createController(element, options, callback);
-
-//     // Show Spotify embed on hover
-//     box10.addEventListener('mouseenter', () => {
-//         element.style.display = 'block';
-//     });
-
-//     // Hide Spotify embed when mouse leaves box10
-//     box10.addEventListener('mouseleave', () => {
-//         element.style.display = 'none';
-//     });
-// };
-  
