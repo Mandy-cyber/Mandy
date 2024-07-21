@@ -33,7 +33,8 @@ nav {
 }
 
 #navbar-logo {
-    width: 10%;
+    margin-left: 1.5vw;
+    width: 100%;
     height: auto;
 }
 
@@ -52,55 +53,12 @@ ul li a {
     color: black;
     font-size: large;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.2s;
 }
 
 ul li a:hover {
     color: palevioletred;
-}
-
-.checkbtn {
-    font-size: 2em;
-    color: black;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    display: none;
-}
-
-@media (max-width: 550px) {
-    .checkbtn {
-        display: block;
-        order: 1;
-    }
-
-    ul {
-        position: fixed;
-        top: 15vh;
-        right: -100%;
-        background-color: white;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: all 0.3s;
-    }
-
-    ul li {
-        margin: 2vh 0;
-    }
-
-    ul li a {
-        font-size: 1.5em;
-    }
-
-    #check:checked ~ ul {
-        right: 0;
-    }
+    font-weight: bolder;
 }
 
 
@@ -121,17 +79,12 @@ ul li a:hover {
 }
 
 #foobar-box {
-    margin-top: 8vh;
+    margin-top: 2vh;
 }
 
-#skills-box {
-    flex: 1 1 calc(40% - 1em);
-    margin-right: 2vw;
-}
 
-#education-box {
-    flex: 1 1 calc(60% - 1em);
-}
+/* EXPERIENCE BOX ELEMENT STYLING */
+/* ------------------------------------------------- */
 
 #experience-grid {
     display: flex;
@@ -147,9 +100,6 @@ ul li a:hover {
     border-color: transparent;
     margin: 1.25em 0;
 }
-
-/* EXPERIENCE BOX ELEMENT STYLING */
-/* ------------------------------------------------- */
 
 .exp-img-container {
     width: 100px;
@@ -181,10 +131,26 @@ ul li a:hover {
 /* SKILLS BOX ELEMENT STYLING */
 /* ------------------------------------------------- */
 
-#skills-box-vertical {
+#and-education {
+    display: none;
+}
+
+#skills-title-box {
+    flex: 1 1 calc(40% - 1em);
+    margin-right: 2vw;
+}
+
+#skills-box {
+    flex: 1 1 calc(40% - 1em);
+    margin-right: 2vw;
+    overflow: visible;
+}
+
+.box-vertical {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 #skill-badges {
@@ -192,27 +158,35 @@ ul li a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 1.5vh;
     padding-bottom: 1.5vh;
 }
 
 .badge {
     margin: 0.5em;
-    background-color: green;
-    color: #fff;
-    font-size: 1em;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 1.25em;
     padding: 5px 10px;
     border-radius: 4px;
 }
 
-.skill-os {
+.badge:hover {
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.skill-os:hover {
     background-color: #ff94c1;
 }
 
-.skill-lang {
+.skill-lang:hover {
     background-color: #7abcf5;
 }
 
-.skill-tool {
+.skill-tool:hover {
     background-color: #6bcf4f;
 }
 
@@ -236,6 +210,7 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_arrow_bottom */
     bottom: 150%;
     left: 50%;
     margin-left: -60px;
+    font-weight: 100;
 }
   
 .tooltip .tooltiptext::after {
@@ -251,4 +226,76 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_arrow_bottom */
   
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+/* EDUCATION BOX STYLING */
+/* ------------------------------------------------- */
+
+#edu-title-box {
+    flex: 1 1 calc(60% - 1em);
+}
+
+#education-box {
+    flex: 1 1 calc(60% - 1em);
+}
+
+#education-code {
+    display: flex;
+    width: 80%;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 1%;
+    font-size: larger;
+
+    padding-right: 15vw;
+    padding-left: 6vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    box-sizing: border-box;
+    margin-left: 6.5vw;
+}
+
+.tech-button {
+    padding: 0.5em;
+    border: 3px solid black;
+    border-radius: 1%;
+
+    background-color: white;
+    color: black;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-weight: bolder;
+    font-size: 1em;
+    justify-content: center;
+}
+
+.tech-button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#preview-button {
+    display: flex;
+    width: 80%;
+    margin-left: 6.5vw;
+    margin-top: -2.25vh;
+    margin-bottom: 1vh;
+}
+
+#raw-button {
+    display: none;
+    margin-top: -2vh;
+    margin-bottom: 1.5vh;
+    width: 100%;
+}
+
+zero-md {
+    display: none;
+    padding: 3vh 7vw;
+    margin: 1.25vh 0vw;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 1%;
+    font-family: 'Glacial Indifference', sans-serif;
 }

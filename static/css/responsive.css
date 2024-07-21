@@ -1,6 +1,11 @@
 /* MOBILE */
 /* ---------------------------------------------------------------- */
 @media screen and (max-width: 550px) {
+
+    body {
+        padding: 0px;
+    }
+
     /* homepage comic stuff */
     /* ------------------------- */
     .carousel {
@@ -27,6 +32,21 @@
         padding-bottom: 0em !important;
     }
 
+    /* navbar */
+    nav {
+        border: none !important;
+    }
+
+    #navbar-logo {
+        margin: 2vh 10vw;
+        width: 30% !important;
+        height: auto;
+    }
+
+    .sticky {
+        display: none;
+    }
+
     /* Swap animation gif */
     #hey-im-mobile {
         display: block;
@@ -38,20 +58,23 @@
 
     /* tech page stuff */
     /* ------------------------- */
+    
+    #navbar-logo {
+        margin-left: 35% !important;
+    }
 
     #tech-body {
         padding-top: 10px;
+        overflow-x: hidden;
     }
 
-    /* navbar (more on tech.css -> not sure why wont work when i move it here) */
-    #navbar-logo {
+    nav, ul, ul li, ul li a  {
         display: none;
     }
 
-    nav {
-        padding: 1vh 2vh;
+    #and-education {
+        display: block !important;
     }
-
 
     #foobar-box {
         margin-top: 0vh !important;
@@ -69,15 +92,51 @@
     /* boxes &  rows */
     .tech-row {
         flex-direction: column !important;
+        margin-top: 4vh !important;
     }
 
     #skills-box {
-        margin-bottom: 2vh;
+        margin-bottom: 4vh;
+    }
+    
+    .badge {
+        font-size: smaller !important;
+    }
+
+    #edu-title-box, #education-code, .tech-button {
+        display: none !important;
+    }
+
+    zero-md {
+        display: block !important;
+        border: none !important;
     }
 
 }
 
-/* DESKTOP & TABLET */
+/* TABLET */
+/* ---------------------------------------------------------------- */
+@media screen and (min-width: 551px) and (max-width: 700px) {
+    /* tech page stuff */
+    #navbar-logo {
+        display: none;
+    }
+
+    ul {
+        margin: 2vh !important;
+    }
+
+    .badge {
+        font-size: smaller !important;
+    }
+
+    #education-code, #preview-button {
+        display: none !important;
+    }
+}
+
+
+/* DESKTOP */
 /* ---------------------------------------------------------------- */
 @media screen and (min-width: 551px) {
     /* home page comics */
@@ -105,6 +164,11 @@
 
     /* tech page */
     /* ------------------------- */
+
+    #navbar-a {
+        width: 10%;
+        height: auto;
+    }
 
     /* Swap foobar image */
     #foobar-img-desktop {

@@ -9,20 +9,18 @@
     <link rel="stylesheet" href="static/css/tech.css">
     <link rel="stylesheet" href=
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
     <title>Mandyland - Tech</title>
 </head>
 <body id="tech-body">
 
     <!-- NAVIGATION -->
     <nav id="tech-navbar">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <img id="navbar-logo" src="static/imgs/logo.png" alt="Mandilocs logo">
+        <a id="navbar-a" href="/index.html"><img id="navbar-logo" src="static/imgs/logo.png" alt="Mandilocs logo"></a>
         <ul>
-            <li><a href="#skills-box">Skills</a></li>
-            <li><a href="#education-box">Education</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#skills-title-box">Skills</a></li>
+            <li><a href="#edu-title-box">Education</a></li>
             <li><a href="#experience-box">Experience</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Organizations</a></li>
@@ -39,44 +37,77 @@
         </div>
 
         <!-- row2: skills & education -->
+        <div id="tech-row6" class="tech-row">
+            <div class="box" id="skills-title-box">
+                <h2 class="box-h2">Skills <span id="and-education">& Education</span></h2>
+            </div>
+            <div class="box" id="edu-title-box">
+                <h2 class="box-h2">Education</h2>
+            </div>
+        </div>
+
         <div id="tech-row2" class="tech-row">
+            <!-- skills -->
             <div class="box" id="skills-box">
-
-                <div id="skills-box-vertical">
-                    <h2 class="box-h2">Technical Skills</h3>
+                <div id="skills-box-vertical" class="box-vertical">
                     <div id="skill-badges">
+                        <span class="badge tooltip skill-os">Linux<span class="tooltiptext">My love for Linux is simply unmatched</span></span>
+                        <span class="badge tooltip skill-os">Windows<span class="tooltiptext">Perfect for Minecraft (and work i guess)</span></span>
+                        <span class="badge tooltip skill-os">MacOS<span class="tooltiptext">No comment...</span></span>
 
-                        <span class="badge tooltip skill-os">Linux<span class="tooltiptext">tt</span></span>
-                        <span class="badge tooltip skill-os">Windows<span class="tooltiptext">tt</span></span>
-                        <span class="badge tooltip skill-os">MacOS<span class="tooltiptext">tt</span></span>
+                        <span class="badge tooltip skill-lang">Python<span class="tooltiptext">Fluent</span></span>
+                        <span class="badge tooltip skill-lang">C<span class="tooltiptext">Proficient</span></span>
+                        <span class="badge tooltip skill-lang">Java & JUnit5<span class="tooltiptext">Proficient</span></span>
+                        <span class="badge tooltip skill-lang">HTML<span class="tooltiptext">Fluent</span></span>
+                        <span class="badge tooltip skill-lang">CSS<span class="tooltiptext">Fluent</span></span>
+                        <span class="badge tooltip skill-lang">SQLite<span class="tooltiptext">Proficient</span></span>
+                        <span class="badge tooltip skill-lang">Racket<span class="tooltiptext">Proficient</span></span>
+                        <span class="badge tooltip skill-lang">JavaScript/TS<span class="tooltiptext">Proficient</span></span>
 
-                        <span class="badge tooltip skill-lang">Python<span class="tooltiptext">tt</span></span>
-                        <span class="badge tooltip skill-lang">C<span class="tooltiptext">tt</span></span>
-                        <span class="badge tooltip skill-lang">Java & JUnit5<span class="tooltiptext">tt</span></span>
-                        <span class="badge tooltip skill-lang">HTML<span class="tooltiptext">tt</span></span>
-                        <span class="badge tooltip skill-lang">CSS<span class="tooltiptext">tt</span></span>
-                        <span class="badge tooltip skill-lang">SQLite<span class="tooltiptext">tt</span></span>
-                        <span class="badge tooltip skill-lang">Racket<span class="tooltiptext">tt</span></span>
-                        <span class="badge tooltip skill-lang">JavaScript/TS<span class="tooltiptext">tt</span></span>
-
-                        <span class="badge tooltip skill-tool">GitHub/GitLab<span class="tooltiptext">tt</span></span>
-                        <span class="badge tooltip skill-tool">MongoDB<span class="tooltiptext">tt</span></span>
-                        <span class="badge tooltip skill-tool">VSCode<span class="tooltiptext">tt</span></span>
-                        <span class="badge tooltip skill-tool">Amazon S3<span class="tooltiptext">tt</span></span>
-                        <span class="badge tooltip skill-tool">Vim<span class="tooltiptext">tt</span></span>
+                        <span class="badge tooltip skill-tool">GitHub/GitLab<span class="tooltiptext">Me 🤝 GitHub</span></span>
+                        <span class="badge tooltip skill-tool">MongoDB<span class="tooltiptext">I always use it for the most random things...</span></span>
+                        <span class="badge tooltip skill-tool">VSCode<span class="tooltiptext">Try out the VSCode Pets extension it's sooooo lovely</span></span>
+                        <span class="badge tooltip skill-tool">Amazon S3<span class="tooltiptext">Anddd I'm learning Lambda as we speak!</span></span>
+                        <span class="badge tooltip skill-tool">Vim<span class="tooltiptext">Well specifically Neovim (close enough)</span></span>
                     </div>
                 </div>
-
             </div>
+            <!-- education -->
             <div class="box" id="education-box">
-                <h2 class="box-h2">Education</h3>
+                <div id="edu-box-vertical" class="box-vertical">
+                    <!-- raw code -->
+                    <pre id="education-code" class="raw-code">
+                        <code>
+## Northeastern University
+### B.S. in Cybersecurity
+&gt; Khoury College Honors Program
+
+**Relevant Courses**:
+- Algorithms & Data
+- Object Oriented Design
+- Computer Systems
+- Network Fundamentals
+- System Security
+- Theory of Computation
+- Interm. Programming with Data
+                        </code>
+                    </pre>
+                    <button id="preview-button" class="tech-button">Preview Markdown</button>
+                </div>
+                <!-- markdown -->
+                <div id="md-vertical" class="box-vertical">
+                    <zero-md src="education.md">
+                        <template></template>
+                    </zero-md>
+                    <button id="raw-button" class="tech-button">Raw Code</button>
+                </div>
             </div>
         </div>
 
         <!-- row3: experience-title -->
         <div id="tech-row3" class="tech-row">
             <div class="box large" id="experience-box">
-                <h2 class="box-h2">Experience</h3>
+                <h2 class="box-h2">Experience</h2>
             </div>
         </div>
 
@@ -99,7 +130,7 @@
                     </div>
                     <p class="exp-dur">May 2024 - Present</p>
                     <h3 class="exp-job">Netflix x Formation</h3>
-                    <p class="exp-pos">Software Engineer Fellow</p>
+                    <p class="exp-pos">Software Engineering Fellow</p>
                 </div>
 
                 <div id="exp-box-3" class="box exp-box">
@@ -169,10 +200,10 @@
         <!-- row5: projects-title & organizations-title -->
         <!-- <div id="tech-row5" class="tech-row">
             <div class="box" id="projects-box-1">
-                <h2 class="box-h2">Projects</h3>
+                <h2 class="box-h2">Projects</h2>
             </div>
             <div class="box" id="orgs-box-1">
-                <h2 class="box-h2">Organizations</h3>
+                <h2 class="box-h2">Organizations</h2>
             </div>
         </div> -->
 

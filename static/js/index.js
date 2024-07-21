@@ -8,7 +8,7 @@ function scrollCarousel(direction) {
 window.onscroll = function() {stickNavbar()};
         
 var navbar = document.getElementById("tech-navbar");
-var sticky = navbar.offsetTop;
+var sticky = navbar;
 
 function stickNavbar() {
     if (window.scrollY || window.pageYOffset >= sticky) {
@@ -20,33 +20,24 @@ function stickNavbar() {
 }
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const box10 = document.getElementById('box10');
-//     const element = document.getElementById('hover-spotify');
+var educationCode = document.getElementById('education-code')
+var previewButton = document.getElementById('preview-button');
+var rawButton = document.getElementById('raw-button');
+var zeroMdElement = document.querySelector('zero-md');
 
-//     let hoverTimeout;
+document.addEventListener('DOMContentLoaded', function() {
 
-//     function onSpotifyIframeApiReady(IFrameAPI) {
-//         const options = {
-//             uri: 'spotify:track:2OFvClbKLxtHeVMb3O1pOX?utm_source=generator&theme=0'
-//         };
-//         const callback = (EmbedController) => {};
-//         IFrameAPI.createController(element, options, callback);
-//     }
+    previewButton.addEventListener('click', function() {
+        educationCode.style.display = 'none';
+        previewButton.style.display = 'none';
+        rawButton.style.display = 'flex';
+        zeroMdElement.style.display = 'flex';
+    });
 
-//     // Load Spotify API and initialize after the window loads
-//     window.onSpotifyIframeApiReady = onSpotifyIframeApiReady;
-
-//     // Show Spotify embed on hover
-//     box10.addEventListener('mouseenter', () => {
-//         clearTimeout(hoverTimeout); // Clear any existing timeout when hovering
-//         element.style.display = 'block';
-//     });
-
-//     // Hide Spotify embed after a delay when mouse leaves
-//     box10.addEventListener('mouseleave', () => {
-//         hoverTimeout = setTimeout(() => {
-//             element.style.display = 'none';
-//         }, 500); // Adjust the delay as needed (500ms = 0.5s)
-//     });
-// });
+    rawButton.addEventListener('click', function() {
+        educationCode.style.display = 'flex';
+        previewButton.style.display = 'flex';
+        rawButton.style.display = 'none';
+        zeroMdElement.style.display = 'none';
+    });
+});
