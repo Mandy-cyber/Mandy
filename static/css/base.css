@@ -1,0 +1,11 @@
+@import "constants.css";
+@import "responsive.css";
+
+/* GENERAL STYLING */
+/* ------------------------------------------------- */
+
+body {
+    margin: 0;
+    font-family: "Itim", "PT Sans", Calibri, Tahoma, sans-serif;
+    background-color: white;
+}

@@ -1,6 +1,7 @@
-/* Responsive styling for mobile */
-/* Come back and fix this LOL */
+/* MOBILE */
+/* ---------------------------------------------------------------- */
 @media screen and (max-width: 550px) {
+    /* make all the comics show on one page + adjusting sizing */
     .carousel {
         display: flex;
         flex-direction: column;
@@ -9,5 +10,43 @@
     .carousel-page {
         display: flex;
         flex-direction: column;
+    }
+
+    #box1 {
+        border-style: hidden;
+        padding-top: 1em;
+        padding-bottom: 0em !important;
+    }
+
+    /* Switch text and <p> sizing */
+    #hey-text {
+        font-size: 8vw;
+    }
+
+    .switch-text {
+        font-size: 8vw;
+    }
+
+    .switch-animation {
+        margin-left: 0rem !important;
+    }
+
+}
+
+/* DESKTOP & TABLET */
+/* ---------------------------------------------------------------- */
+@media screen and (min-width: 551px) {
+    .carousel-page {
+        /* bring comic pages lower on the page */
+        margin-top: 20vh;
+    }
+
+    /* Switch text and <p> sizing */
+    #hey-text {
+        font-size: 10vw;
+    }
+
+    .switch-text {
+        font-size: 10vw;
     }
 }
