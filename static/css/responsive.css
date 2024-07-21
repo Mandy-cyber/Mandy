@@ -1,8 +1,11 @@
 /* MOBILE */
 /* ---------------------------------------------------------------- */
 @media screen and (max-width: 550px) {
+    /* homepage comic stuff */
+    /* ------------------------- */
     .carousel {
         flex-direction: column;
+        scroll-snap-type: proximity;
     }
 
     .carousel-page {
@@ -33,6 +36,9 @@
         display: none;
     }
 
+    /* tech page stuff */
+    /* ------------------------- */
+
     /* navbar (more on tech.css -> not sure why wont work when i move it here) */
     #navbar-logo {
         display: none;
@@ -42,9 +48,22 @@
         padding: 1vh 2vh;
     }
 
-    /* tech page */
+    /* Swap foobar image */
+    #foobar-img-desktop {
+        display: none;
+    }
+
+    #foobar-img-mobile {
+        display: block;
+    }
+
+    /* boxes &  rows */
     .tech-row {
         flex-direction: column !important;
+    }
+
+    #skills-box {
+        margin-bottom: 2vh;
     }
 
 }
@@ -52,12 +71,14 @@
 /* DESKTOP & TABLET */
 /* ---------------------------------------------------------------- */
 @media screen and (min-width: 551px) {
+    /* home page comics */
+    /* ------------------------- */
     .carousel {
         scroll-snap-stop: always;
     }
     
+    /* bring comic pages lower on the page */
     .carousel-page {
-        /* bring comic pages lower on the page */
         margin-top: 20vh;
     }
 
@@ -71,6 +92,18 @@
     }
 
     /* tech page */
+    /* ------------------------- */
+
+    /* Swap foobar image */
+    #foobar-img-desktop {
+        display: block;
+    }
+
+    #foobar-img-mobile {
+        display: none;
+    }
+
+    /* boxes & rows */
     .exp-box {
         flex: 1 1 calc(33.333% - 1em);
     }
