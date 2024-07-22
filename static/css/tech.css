@@ -120,6 +120,30 @@ ul li a:hover {
     object-fit: cover;
 }
 
+#johndeere:hover {
+    content: url('../imgs/logos/color/johndeere.png');
+}
+
+#nf:hover {
+    content: url('../imgs/logos/color/nf.png');
+}
+
+#hbp:hover {
+    content: url('../imgs/logos/color/hbp.png');
+}
+
+#starapple:hover {
+    content: url('../imgs/logos/color/starapple.png');
+}
+
+.recordedfuture:hover {
+    content: url('../imgs/logos/color/recordedfuture.png');
+}
+
+.northeastern:hover {
+    content: url('../imgs/logos/color/northeastern.png');
+}
+
 .exp-dur {
     margin: -1em 0;
     font-size: calc(0.5em + 0.75vw);
