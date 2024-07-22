@@ -55,8 +55,9 @@ ul li {
 
 ul li a {
     color: black;
-    font-size: large;
+    font-size: calc(0.5em + 1.25vw);
     text-decoration: none;
+    font-weight: bolder;
     transition: color 0.2s;
 }
 
@@ -121,15 +122,17 @@ ul li a:hover {
 
 .exp-dur {
     margin: -1em 0;
-    font-size: 0.75em;
+    font-size: calc(0.5em + 0.75vw);
 }
 
 .exp-job {
     margin-bottom: -0.3em;
+    font-size: calc(0.5em + 1.25vw);
 }
 
 .exp-pos {
     font-style: italic;
+    font-size: calc(0.5em + 1vw);
 }
 
 /* SKILLS BOX ELEMENT STYLING */
@@ -171,7 +174,7 @@ ul li a:hover {
     color: black;
     background-color: white;
     border: 2px solid black;
-    font-size: 1.25em;
+    font-size: calc(0.5em + 1.25vw);
     padding: 5px 10px;
     border-radius: 4px;
 }

@@ -95,14 +95,16 @@
         margin-top: 4vh !important;
     }
 
+    /* badges */
     #skills-box {
         margin-bottom: 4vh;
     }
     
     .badge {
-        font-size: smaller !important;
+        font-size: 1.1em !important;
     }
 
+    /* markdown stuff */
     #edu-title-box, #education-code, .tech-button {
         display: none !important;
     }
@@ -110,6 +112,19 @@
     zero-md {
         display: block !important;
         border: none !important;
+    }
+
+    /* font sizes */
+    .exp-dur {
+        font-size: 0.8em !important;
+    }
+
+    .exp-job {
+        font-size: 1.25em !important;
+    }
+
+    .exp-pos {
+        font-size: 1em !important;
     }
 
 }
