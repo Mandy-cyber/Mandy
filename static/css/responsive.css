@@ -163,6 +163,10 @@
 /* ---------------------------------------------------------------- */
 @media screen and (min-width: 551px) and (max-width: 700px) {
     /* tech page stuff */
+    nav {
+        height: 6vh !important;
+    }
+
     #navbar-logo {
         display: none;
     }
@@ -216,7 +220,7 @@
     /* ------------------------- */
 
     nav {
-        height: 8vh;
+        height: 10vh;
     }
 
     #navbar-a {
