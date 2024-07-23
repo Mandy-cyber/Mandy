@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="static/css/tech.css">
     <link rel="stylesheet" href=
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-<script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
     <title>Mandyland - Tech</title>
 </head>
 <body id="tech-body">
@@ -196,7 +196,7 @@
         <!-- row5: projects-title & organizations-title -->
         <div id="tech-row5" class="tech-row">
             <div class="box" id="projects-title-box">
-                <h2 class="box-h2">Projects</h2>
+                <h2 class="box-h2">Projects <span id="and-organizations">& Organizations</span></h2>
             </div>
             <div class="box" id="orgs-title-box">
                 <h2 class="box-h2">Organizations</h2>
@@ -207,22 +207,85 @@
         <div id="tech-row6" class="tech-row">
             <!-- projects -->
             <div class="box" id="projects-box">
-                will become carousel
+                <!-- SLIDESHOW -->
+                <div id="slideshow-container">
+                    <div id="tech-slideshow">
+                        <!-- project 1 -->
+                        <div class="slides fade">
+                            <a href="https://github.com/Mandy-cyber/Baby-Buds" target="_blank" class="slide-links"><img src="static/imgs/projects/baby-buds.png" style="width:100%"></a>
+                        </div>
+                        <!-- project 2 -->
+                        <div class="slides fade">
+                            <a href="https://github.com/Mandy-cyber/BattleSalvo" target="_blank" class="slide-links"><img src="static/imgs/projects/battle-salvo.png" style="width:100%"></a>
+                        </div>
+                        <!-- project 3 -->
+                        <div class="slides fade">
+                            <a href="https://github.com/Big-Sister-App/Big-Sister" target="_blank" class="slide-links"><img src="static/imgs/projects/big-sister.png" style="width:100%"></a>
+                        </div>
+                        <!-- project 4 -->
+                        <div class="slides fade">
+                            <a href="https://github.com/Mandy-cyber/Bullet-Journal" target="_blank" class="slide-links"><img src="static/imgs/projects/bullet-journal.png" style="width:100%"></a>
+                        </div>
+                        <!-- project 5 -->
+                        <div class="slides fade">
+                            <a href="https://github.com/Mandy-cyber/Down-The-Rabbit-Hole" target="_blank" class="slide-links"><img src="static/imgs/projects/down-the-rabbit-hole.png" style="width:100%"></a>
+                        </div>
+                        <!-- project 6 -->
+                        <div class="slides fade">
+                            <a href="https://github.com/Mandy-cyber/Finance-Scrapers" target="_blank" class="slide-links"><img src="static/imgs/projects/finance-scrapers.png" style="width:100%"></a>
+                        </div>
+                        <!-- project 7 -->
+                        <div class="slides fade">
+                            <a href="https://github.com/Mandy-cyber/Markdown-ToC-Generator" target="_blank" class="slide-links"><img src="static/imgs/projects/markdown-toc-generator.png" style="width:100%"></a>
+                        </div>
+                        <!-- project 8 -->
+                        <div class="slides fade">
+                            <a href="https://github.com/Mandy-cyber/Page14-Website" target="_blank" class="slide-links"><img src="static/imgs/projects/page14.png" style="width:100%"></a>
+                        </div>
+                        <!-- project 9 -->
+                        <div class="slides fade">
+                            <a href="https://github.com/Mandy-cyber/Period-Pride-Ja-Website" target="_blank" class="slide-links"><img src="static/imgs/projects/period-pride.png" style="width:100%"></a>
+                        </div>
+                        <!-- project 10 -->
+                        <div class="slides fade">
+                            <a href="https://github.com/Mandy-cyber/Tea-Time" target="_blank" class="slide-links"><img src="static/imgs/projects/tea-time.png" style="width:100%"></a>
+                        </div>
+                        <!-- project 11 -->
+                        <div class="slides fade">
+                            <a href="https://github.com/Mandy-cyber/The-STEM" target="_blank" class="slide-links"><img src="static/imgs/projects/the-stem.png" style="width:100%"></a>
+                        </div>
+                    </div>
+                    <!-- slideshow progress dots & arrows -->
+                    <div id="progress-dots">
+                        <span id="prev" onclick="moveSlides(-1)">&lt</span>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                        <span class="dot" onclick="currentSlide(10)"></span>
+                        <span class="dot" onclick="currentSlide(11)"></span>
+                        <span id="next" onclick="moveSlides(1)">&gt</span>
+                    </div>
+                </div>
             </div>
-
 
 
 
             <!-- organizations -->
             <div class="box" id="orgs-box">
                 <div id="orgs-vertical" class="box-vertical">
-                    <div class="org-info-row">
+                    <div id="colorstack-row" class="org-info-row">
                         <div class="org-img-container">
                             <a target="_blank" href="https://www.colorstack.org/"><img id="colorstack" class="exp-img" src="static/imgs/logos/bw/colorstack.png" alt="ColorStack logo"></a>
                         </div>
                         <p class="org-text">ColorStack Member</p>
                     </div>
-                    <div class="org-info-row">
+                    <div id="rtc-row" class="org-info-row">
                         <div class="org-img-container">
                             <a target="_blank" href="https://rewritingthecode.org/"><img id="rtc" class="exp-img" src="static/imgs/logos/bw/rtc.png" alt="RewritingTheCode (RTC) logo"></a>
                         </div>

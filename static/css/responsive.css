@@ -40,6 +40,7 @@
 
     #navbar-logo {
         margin: 2vh 10vw;
+        margin-bottom: -5vh;
         width: 30% !important;
         height: auto;
     }
@@ -98,35 +99,45 @@
 
 
     /* TODO: come fix eventually */
-    /* project and org stuff */
-    #orgs-box {
-        display: none;
-    }
+    /* projects */
     #projects-box {
         display: none;
     }
-    #projects-title-box {
-        display: none;
+
+    .proj-text, .dot {
+        display: none !important;
     }
+
+    #and-organizations {
+        display: flex !important;
+    }
+
+    /* organizations */
     #orgs-title-box {
         display: none;
     }
-    /* .org-text {
-        font-size: 1.5em !important;
+
+    .org-text {
+        font-size: 1.20em !important;
     }
 
     .org-info-row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 2vh;
+        margin-left: 4vw !important;
+    }
+
+    #colorstack-row {
+        margin-bottom: -4vh;
+    }
+
+    #rtc-row {
+        margin-bottom: -2.5vh;
     }
 
     .org-img-container {
         width: 30vw !important;
         height: auto !important;
         margin: 1em 3vw !important;
-    } */
+    }
 
     /* badges */
     #skills-box {

@@ -5,8 +5,9 @@ function scrollCarousel(direction) {
     container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
 }
 
+
+// TODO: come back and make this better because it acts kinda weird`
 window.onscroll = function() {stickNavbar()};
-        
 var navbar = document.getElementById("tech-navbar");
 var sticky = navbar;
 
@@ -20,6 +21,7 @@ function stickNavbar() {
 }
 
 
+// MARKDOWN SECTION
 var educationCode = document.getElementById('education-code')
 var previewButton = document.getElementById('preview-button');
 var rawButton = document.getElementById('raw-button');
@@ -41,3 +43,41 @@ document.addEventListener('DOMContentLoaded', function() {
         zeroMdElement.style.display = 'none';
     });
 });
+
+
+// PROJECT SLIDESHOW
+// adjusted from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow
+let slideIndex = 1;
+showSlides(slideIndex);
+setInterval(autoSlide, 5000);
+
+function autoSlide() {
+  showSlides(slideIndex += 1);
+}
+
+function moveSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  let dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
