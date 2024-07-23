@@ -236,7 +236,9 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_arrow_bottom */
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 1.5vw;
+    padding: 1vw;
+    height: auto;
+    width: 10vw;
     position: absolute;
     z-index: 1;
     bottom: 150%;
