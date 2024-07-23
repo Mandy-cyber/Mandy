@@ -330,3 +330,58 @@ zero-md {
     border-radius: 1%;
     font-family: 'Glacial Indifference', sans-serif;
 }
+
+
+/* PROJECTS BOXES STYLING */
+/* ------------------------------------------------- */
+
+#projects-title-box {
+    flex: 1 1 calc(70% - 1em);
+    margin-right: 2vw;
+}
+
+#projects-box {
+    flex: 1 1 calc(70% - 1em);
+    margin-right: 2vw;
+}
+
+
+/* ORGANIZATIONS BOXES STYLING */
+/* ------------------------------------------------- */
+
+#orgs-title-box {
+    flex: 1 1 calc(30% - 1em);
+}
+
+#orgs-box {
+    flex: 1 1 calc(30% - 1em);
+    padding-bottom: 1.5vh;
+}
+
+.org-img-container {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    margin-top: 2vh;
+    margin-left: 1.5vw;
+}
+
+.org-info-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.org-text {
+    padding-top: 1vh;
+    margin: 1vh 1vw;
+    font-size: calc(0.5em + 1.5vw);
+}
+
+#colorstack:hover {
+    content: url("../imgs/logos/color/colorstack.png");
+}
+
+#rtc:hover {
+    content: url("../imgs/logos/color/rtc.png");
+}
