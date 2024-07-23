@@ -78,25 +78,11 @@
         display: block !important;
     }
 
-    #foobar-box {
-        margin-top: 0vh !important;
-    }
-
-    /* Swap foobar image */
-    #foobar-img-desktop {
-        display: none;
-    }
-
-    #foobar-img-mobile {
-        display: block;
-    }
-
     /* boxes &  rows */
     .tech-row {
         flex-direction: column !important;
         margin-top: 4vh !important;
     }
-
 
     /* TODO: come fix eventually */
     /* projects */
@@ -229,18 +215,13 @@
     /* tech page */
     /* ------------------------- */
 
+    nav {
+        height: 7vh;
+    }
+
     #navbar-a {
         width: 10%;
         height: auto;
-    }
-
-    /* Swap foobar image */
-    #foobar-img-desktop {
-        display: block;
-    }
-
-    #foobar-img-mobile {
-        display: none;
     }
 
     /* boxes & rows */
