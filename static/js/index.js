@@ -49,7 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // adjusted from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow
 let slideIndex = 1;
 showSlides(slideIndex);
-setInterval(autoSlide, 5000);
+var slideInterval;
+slideInterval = setInterval(autoSlide, 5000);
 
 function autoSlide() {
   showSlides(slideIndex += 1);
@@ -81,3 +82,16 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+// stop autoscroll when arrows are used
+var nextBtn = document.getElementById("next")
+var prevBtn = document.getElementById("prev")
+
+document.addEventListener('DOMContentLoaded', function() {
+    nextBtn.addEventListener('click', function() {
+        clearInterval(slideInterval)
+    });
+    prevBtn.addEventListener('click', function() {
+        clearInterval(slideInterval)
+    });
+});
