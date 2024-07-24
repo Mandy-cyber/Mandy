@@ -36,6 +36,7 @@
     /* navbar */
     nav {
         border: none !important;
+        position: relative !important;
     }
 
     #navbar-logo {
