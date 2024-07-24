@@ -52,6 +52,9 @@
         margin-bottom: -2vh;
         justify-content: center;
         padding-left: 3vw;
+        padding-bottom: 1vh;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
     }
 
     .mobile-ul li {
@@ -102,10 +105,13 @@
         margin-top: 4vh !important;
     }
 
-    /* TODO: come fix eventually */
+    #exp-box-9 {
+        display: none;
+    }
+
     /* projects */
     #projects-box {
-        display: none;
+        margin-bottom: 4vh;
     }
 
     .proj-text, .dot {
