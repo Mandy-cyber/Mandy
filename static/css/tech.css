@@ -37,7 +37,10 @@
                 url('../imgs/projects/color_period-pride.png'),
                 url('../imgs/projects/color_markdown-toc-generator.png'),
                 url('../imgs/projects/color_finance-scrapers.png'),
-                url('../imgs/projects/color_tea-time.png')
+                url('../imgs/projects/color_tea-time.png'),
+                url('../imgs/logos/color/linkedin.png'),
+                url('../imgs/logos/color/github.png'),
+                url('../imgs/logos/color/comicbook.png')
 }
 
 /* NAVBAR STYLING
@@ -89,6 +92,59 @@ ul li a:hover {
     color: palevioletred;
     font-weight: bolder;
 }
+
+
+/* FLOATING ICONS */
+/* ------------------------------------------------- */
+
+.floating-icons {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 2vh;
+    right: 0vw;
+    z-index: 100;
+}
+
+.floating-icon {
+    width: 4.5em;
+    height: 4.5em;
+    margin-right: 2vw;
+    margin-bottom: 1.5vw;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.floating-icon:hover {
+    width: 4.75em;
+    height: 4.75em;
+    border: transparent;
+}
+
+.hidden-floating {
+    display: none;
+}
+
+.floating-icon-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+#comicbook-icon:hover { 
+    content: url("../imgs/logos/color/comicbook.png"); 
+    background-color: palevioletred;
+}
+#github-icon:hover { content: url("../imgs/logos/color/github.jpg"); }
+#linkedin-icon:hover { content: url("../imgs/logos/color/linkedin.png"); }
+#wave-icon:hover { 
+    content: url("../imgs/logos/color/wave.png"); 
+    background-color: white;
+}
+
 
 
 /* BOX STYLING */

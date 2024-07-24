@@ -65,6 +65,10 @@
         margin-left: 35% !important;
     }
 
+    .floating-icons {
+        display: none !important;
+    }
+
     #tech-body {
         padding-top: 10px;
         overflow-x: hidden;
