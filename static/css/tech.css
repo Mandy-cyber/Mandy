@@ -18,6 +18,28 @@
     width: 100%;
 }
 
+#preload-images {
+    display: none;
+    background: url('../imgs/logos/color/johndeere.png'),
+                url('../imgs/logos/color/nf.png'),
+                url('../imgs/logos/color/hbp.png'),
+                url('../imgs/logos/color/starapple.png'),
+                url('../imgs/logos/color/recordedfuture.png'),
+                url('../imgs/logos/color/northeastern.png'),
+                url('../imgs/logos/color/colorstack.png'),
+                url('../imgs/logos/color/rtc.png'),
+                url('../imgs/projects/color_baby-buds.png'),
+                url('../imgs/projects/color_battle-salvo.png'),
+                url('../imgs/projects/color_big-sister.png'),
+                url('../imgs/projects/color_down-the-rabbit-hole.png'),
+                url('../imgs/projects/color_bullet-journal.png'),
+                url('../imgs/projects/color_the-stem.png'),
+                url('../imgs/projects/color_period-pride.png'),
+                url('../imgs/projects/color_markdown-toc-generator.png'),
+                url('../imgs/projects/color_finance-scrapers.png'),
+                url('../imgs/projects/color_tea-time.png')
+}
+
 /* NAVBAR STYLING
 -------------------------------------------------
 Adjusted from: https://www.geeksforgeeks.org/how-to-make-responsive-navbar-menu-in-css/
