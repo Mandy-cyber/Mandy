@@ -120,3 +120,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+// show dropdown when home is hovered
+var homeText = document.getElementById('home-a');
+var dropDown = document.getElementById('tech-dropdown');
+
+homeText.addEventListener('mouseover', function() {
+    dropDown.style.display = "flex";
+});
+
+// hide dropdown when leaving home text or tech dropdown area
+document.addEventListener('mouseover', function(event) {
+    if (!homeText.contains(event.target) && !dropDown.contains(event.target)) {
+        dropDown.style.display = "none";
+    }
+});
