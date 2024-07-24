@@ -45,6 +45,18 @@
         height: auto;
     }
 
+    .mobile-ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5vh;
+        margin-bottom: -2vh;
+        justify-content: center;
+    }
+
+    .mobile-ul li {
+        font-size: 1.5em;
+    }
+
     .sticky {
         display: none;
     }
@@ -65,8 +77,9 @@
         margin-left: 35% !important;
     }
 
-    .floating-icons {
-        display: none !important;
+    .floating-icon {
+        width: 3em !important;
+        height: 3em !important;
     }
 
     #tech-body {
@@ -74,7 +87,7 @@
         overflow-x: hidden;
     }
 
-    nav, ul, ul li, ul li a  {
+    nav, nav ul, nav ul li, nav ul li a  {
         display: none;
     }
 
@@ -175,6 +188,10 @@
         display: none;
     }
 
+    #tech-navbar ul {
+        margin-top: 3.5vh !important;
+    }
+
     ul {
         margin: 2vh !important;
     }
@@ -193,7 +210,8 @@
     }
 
     .double-underline::after {
-        display: none;
+        top: 3.25vh !important;
+        width: 7.25vw !important;
     }
 }
 
@@ -234,6 +252,10 @@
     #navbar-a {
         width: 10%;
         height: auto;
+    }
+
+    #mobile-navbar {
+        display: none !important;
     }
 
     /* boxes & rows */
