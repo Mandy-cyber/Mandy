@@ -194,13 +194,13 @@ ul li a:hover {
     border-radius: 50%;
 }
 
-#comicbook-icon:hover { 
+#comicbook-icon:hover img { 
     content: url("../imgs/logos/color/comicbook.png"); 
     background-color: palevioletred;
 }
-#github-icon:hover { content: url("../imgs/logos/color/github.jpg"); }
-#linkedin-icon:hover { content: url("../imgs/logos/color/linkedin.png"); }
-#wave-icon:hover { 
+#github-icon:hover img { content: url("../imgs/logos/color/github.jpg"); }
+#linkedin-icon:hover img { content: url("../imgs/logos/color/linkedin.png"); }
+#wave-icon:hover img { 
     content: url("../imgs/logos/color/wave.png"); 
     background-color: white;
 }
