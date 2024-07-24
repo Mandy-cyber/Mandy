@@ -39,6 +39,7 @@
                 url('../imgs/projects/color_finance-scrapers.png'),
                 url('../imgs/projects/color_tea-time.png'),
                 url('../imgs/logos/color/linkedin.png'),
+                url('../imgs/projects/color_page14.png'),
                 url('../imgs/logos/color/github.png'),
                 url('../imgs/logos/color/comicbook.png')
 }
@@ -69,18 +70,6 @@ Parts taken and adjusted from: https://www.geeksforgeeks.org/how-to-make-respons
     border-color: pink;
     transition: border-color 0.1s;
 }
-
-/* <li>
-        <!-- home dropdown situation -->
-        <div class="dropdown">
-            <a id="home-a" class="double-underline" href="/index.html">Home</a>
-            <div class="dropdown-content">
-                <a class="a" href="https://www.fiverr.com/mandilocs">Fiverr</a>
-                <a class="a" href="https://www.etsy.com/shop/MandiLocs">Etsy</a>
-                <a class="a" href="/boredom.html">Boredom</a>
-            </div>
-        </div>
-    </li> */
 
 .dropdown {
     position: relative;
@@ -581,7 +570,7 @@ zero-md {
 #period-pride:hover { content: url("../imgs/projects/color_period-pride.png"); }
 #md-toc:hover { content: url("../imgs/projects/color_markdown-toc-generator.png"); }
 #finance-scrapers:hover { content: url("../imgs/projects/color_finance-scrapers.png"); }
-#period-pride:hover { content: url("../imgs/projects/color_period-pride.png"); }
+#page14:hover { content: url("../imgs/projects/color_page14.png"); }
 #tea-time:hover { content: url("../imgs/projects/color_tea-time.png"); }
 
 
