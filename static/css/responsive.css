@@ -1,0 +1,235 @@
+/* MOBILE */
+/* ---------------------------------------------------------------- */
+@media screen and (max-width: 550px) {
+
+    body {
+        padding: 0px;
+        margin-left: -2vw !important;
+    }
+
+    /* homepage comic stuff */
+    /* ------------------------- */
+    .carousel {
+        flex-direction: column;
+    }
+
+    .carousel-page {
+        flex-direction: column !important;
+        margin-bottom: -2vh !important;
+        scroll-snap-align: none !important;
+    }
+
+    #box1 {
+        margin-top: 25vh;
+        margin-bottom: 37vh;
+    }
+
+    .box {
+        width: 100% !important;
+    }
+
+    #box1 {
+        padding-top: 1em;
+        padding-bottom: 0em !important;
+    }
+
+    /* navbar */
+    nav {
+        border: none !important;
+    }
+
+    #navbar-logo {
+        margin: 2vh 10vw;
+        margin-bottom: -5vh;
+        width: 30% !important;
+        height: auto;
+    }
+
+    .sticky {
+        display: none;
+    }
+
+    /* Swap animation gif */
+    #hey-im-mobile {
+        display: block;
+    }
+
+    #hey-im-desktop {
+        display: none;
+    }
+
+    /* tech page stuff */
+    /* ------------------------- */
+    
+    #navbar-logo {
+        margin-left: 35% !important;
+    }
+
+    #tech-body {
+        padding-top: 10px;
+        overflow-x: hidden;
+    }
+
+    nav, ul, ul li, ul li a  {
+        display: none;
+    }
+
+    #and-education {
+        display: block !important;
+    }
+
+    /* boxes &  rows */
+    .tech-row {
+        flex-direction: column !important;
+        margin-top: 4vh !important;
+    }
+
+    /* TODO: come fix eventually */
+    /* projects */
+    #projects-box {
+        display: none;
+    }
+
+    .proj-text, .dot {
+        display: none !important;
+    }
+
+    #and-organizations {
+        display: flex !important;
+    }
+
+    /* organizations */
+    #orgs-title-box {
+        display: none;
+    }
+
+    .org-text {
+        font-size: 1.20em !important;
+    }
+
+    .org-info-row {
+        margin-left: 4vw !important;
+    }
+
+    #colorstack-row {
+        margin-bottom: -4vh;
+    }
+
+    #rtc-row {
+        margin-bottom: -2.5vh;
+    }
+
+    .org-img-container {
+        width: 30vw !important;
+        height: auto !important;
+        margin: 1em 3vw !important;
+    }
+
+    /* badges */
+    #skills-box {
+        margin-bottom: 4vh;
+    }
+    
+    .badge {
+        font-size: 1.1em !important;
+    }
+
+    /* markdown stuff */
+    #edu-title-box, #education-code, .tech-button {
+        display: none !important;
+    }
+
+    zero-md {
+        display: block !important;
+        border: none !important;
+    }
+
+    /* font sizes */
+    .exp-dur {
+        font-size: 0.8em !important;
+    }
+
+    .exp-job {
+        font-size: 1.25em !important;
+    }
+
+    .exp-pos {
+        font-size: 1em !important;
+    }
+
+}
+
+/* TABLET */
+/* ---------------------------------------------------------------- */
+@media screen and (min-width: 551px) and (max-width: 700px) {
+    /* tech page stuff */
+    nav {
+        height: 6vh !important;
+    }
+
+    #navbar-logo {
+        display: none;
+    }
+
+    ul {
+        margin: 2vh !important;
+    }
+
+    .badge {
+        font-size: 1em !important;
+    }
+
+    #education-code, #preview-button {
+        display: none !important;
+    }
+
+    zero-md {
+        display: block !important;
+        border: none !important;
+    }
+}
+
+
+/* DESKTOP */
+/* ---------------------------------------------------------------- */
+@media screen and (min-width: 551px) {
+    /* home page comics */
+    /* ------------------------- */
+    .carousel {
+        scroll-snap-stop: always;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+    }
+    
+    /* bring comic pages lower on the page */
+    .carousel-page {
+        margin-top: 20vh;
+    }
+
+    /* Swap animation gif */
+    #hey-im-mobile {
+        display: none;
+    }
+
+    #hey-im-desktop {
+        display: block;
+    }
+
+    /* tech page */
+    /* ------------------------- */
+
+    nav {
+        height: 10vh;
+    }
+
+    #navbar-a {
+        width: 10%;
+        height: auto;
+    }
+
+    /* boxes & rows */
+    .exp-box {
+        flex: 1 1 calc(33.333% - 1em);
+    }
+}

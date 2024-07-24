@@ -2,47 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Amanda Rodriques">
+    <meta name="description" content="For all things Mandy: fiverr, etsy, tech, and boredom">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/style.css">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="static/imgs/logo.png">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <title>Mandyland - Home</title>
 </head>
 <body>
 
-    <div class="container">
-        <div id="app-section-1" class="item app-section">
-            <img id="trash" class="app-icon app-sec-icon" src="static/imgs/basic_app_icon.png" alt="App icon for the Trash section">
-            <img id="profile" class="app-icon app-sec-icon" src="static/imgs/basic_app_icon.png" alt="App icon for the Profile section">
-            <img id="terminal" class="app-icon app-sec-icon" src="static/imgs/basic_app_icon.png" alt="App icon for the Terminal section">
-            <img id="mail" class="app-icon app-sec-icon" src="static/imgs/basic_app_icon.png" alt="App icon for the Mail section">
-            <img id="freelance" class="app-icon app-sec-icon" src="static/imgs/basic_app_icon.png" alt="App icon for the Freelance & Etsy section">
-        </div>
-        <div id="app-section-2" class="item app-section">
-            <img id="notepad" class="app-icon app-sec-icon" src="static/imgs/basic_app_icon.png" alt="App icon for the Notepad section">
-        </div>
+    <div class="carousel">
 
-
-        <div id="open-app-section" class="item">
-            <div id="toolbar" class="bars">Toolbar</div>
-        </div>
-
-
-        <div id="widget-section" class="item">
-            <div id="theme-bar" class="bars">Theme bar</div>
-            <div id="circle-widget">
-                <img id="profile-pic" src="static/imgs/mandy_drawing.png" alt="A drawing of me wearing headphones with a heart on my head. Drawing by Annabelle Chung!">
+        <!-- row 1 -->
+        <section class="carousel-page">
+            <div class="box large" id="box1">
+                <img id="hey-im-desktop"src="static/imgs/hey-im.gif" alt="Hey I'm Mandy, Mandilocs, MandyCyber, Amanda R">
+                <img id="hey-im-mobile" src="static/imgs/hey-im-no-swipe.gif" alt="Hey I'm Mandy, Mandilocs, MandyCyber, Amanda R">
             </div>
+        </section>
 
-            <div id="two-apps-section">
-                <img id="experience" class="app-icon widget-sec-icon" src="static/imgs/basic_app_icon.png" alt="App icon for the Work Experience section">
-                <img id="projects" class="app-icon widget-sec-icon" src="static/imgs/basic_app_icon.png" alt="App icon for the Projects section">
+        <!-- row 2 -->
+        <section class="carousel-page">
+            <div class="box" id="box2"><img src="static/imgs/self-portrait.png" alt="Self-Portrait"></div>
+            <div class="box" id="box3"><img src="static/imgs/here-for-what.png" alt="Anywho you could be here for many things"></div>
+            <!-- <div class="box large" id="box-new2"> -->
+        </section>
+
+        <!-- row 3 -->
+        <section class="carousel-page">
+            <div class="box small hvr-wobble-skew" id="box4">
+                <a target="_blank" class="box-links" href="https://www.fiverr.com/mandilocs"><img src="static/imgs/fiverr.png" alt="Fiverr"></a>
             </div>
-        </div>
+            <div class="box small hvr-wobble-skew" id="box5">
+                <a target="_blank" class="box-links" href="https://www.etsy.com/shop/MandiLocs"><img src="static/imgs/etsy.png" alt="Etsy"></a>
+            </div>
+            <div class="box small hvr-wobble-skew" id="box6">
+                <a target="" class="box-links" href="/tech.html"><img src="static/imgs/tech.png" alt="Tech"></a>
+            </div>
+            <div class="box small hvr-wobble-skew" id="box7">
+                <a target="" class="box-links" href="#"><img src="static/imgs/boredom.png" alt="Boredom"></a>
+            </div>
+            <!-- <div class="box large" id="box-new3"></div> -->
+        </section>
 
+        <!-- row 4 -->
+        <section class="carousel-page">
+            <div class="box large" id="box8"><img src="static/imgs/oh-yeah.png" alt="Click on one of the above boxes to check it out"></div>
+            <!-- <div class="box large" id="box-new4"></div> -->
+        </section>
 
-        <div id="footer-bar" class="item">Page 'Footer'</div>
+        <!-- row 5 -->
+        <section class="carousel-page">
+            <div class="box" id="box9"><img src="static/imgs/have-fun.png" alt="Have Fun"></div>
+            <div class="box" id="box10"><img src="static/imgs/dancing.png" alt="Dancing and Music"></div>
+            <!-- <div class="box large" id="hover-spotify"></div> -->
+        </section>
     </div>
 
     <script src="static/js/index.js"></script>
-    
+    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
 </body>
 </html>
