@@ -263,6 +263,12 @@
     .modal-content::-webkit-scrollbar {
         display: none !important;
     }
+
+    /* person stuff */
+    .person {
+        width: calc(50% - 1em) !important;
+        margin-bottom: -2.5vh !important;
+    }
 }
 
 /* TABLET */

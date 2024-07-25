@@ -263,3 +263,34 @@
     color: palevioletred;
     text-decoration: underline dashed;
 }
+
+
+/* PEOPLE SECTION STYLING */
+/* ------------------------------------------------- */
+
+#people-title-box {
+    margin-bottom: 2.5vh;
+}
+
+#people-box {
+    margin-bottom: 5vh;
+}
+
+#people {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: calc(25% - 1em);
+    margin-bottom: 2.5vh;
+}
+
+.person-name {
+    margin-top: 0vh;
+}
