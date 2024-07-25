@@ -42,3 +42,27 @@ document.addEventListener('DOMContentLoaded', function() {
     //set the first active book
     updateActiveBook();
 });
+
+
+// MODAL
+// --------------------------------------------------------------------
+var modal = document.getElementById("food-modal");
+var btn = document.getElementById("food-button");
+var span = document.getElementsByClassName("close")[0];
+
+// open modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// close modal using close button
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// close modal if click outside modal
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

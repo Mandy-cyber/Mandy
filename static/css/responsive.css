@@ -7,6 +7,15 @@
         margin-left: -2vw !important;
     }
 
+    .desktop-hide {
+        display: flex !important;
+    }
+
+    .mobile-hide {
+        display: none !important;
+    }
+
+
     /* homepage comic stuff */
     /* ------------------------- */
     .carousel {
@@ -209,6 +218,33 @@
 
     .book {
         width: 30vw !important;
+    }
+
+    /* row stuff */
+    .boredom-row {
+        display: flex;
+        flex-direction: column !important;
+        text-align: center;
+    }
+    
+    #food-title-box, #food-box {
+        margin-bottom: 2.5vh;
+    }
+    
+    #crochet-title-box, #crochet-box {
+        margin-bottom: 2.5vh;
+    }
+
+    /* recipe stuff */
+    .modal-content {
+        width: 75% !important;
+        top: 10% !important;
+        -ms-overflow-style: none !important;
+        scrollbar-width: none !important;
+    }
+
+    .modal-content::-webkit-scrollbar {
+        display: none !important;
     }
 }
 
