@@ -226,17 +226,13 @@
         flex-direction: column !important;
         text-align: center;
     }
-    
-    #food-title-box, #food-box {
-        margin-bottom: 2.5vh;
-    }
-    
-    #crochet-title-box, #crochet-box {
-        margin-bottom: 2.5vh;
+
+    #food-box, #crochet-box {
+        margin-bottom: 4vh !important;
     }
 
     #food-button {
-        height: 60vw !important;
+        height: 70vw !important;
     }
 
     /* recipe stuff */
