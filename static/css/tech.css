@@ -256,6 +256,21 @@ ul li a:hover {
     object-fit: cover;
 }
 
+.exp-dur {
+    margin: -1em 0;
+    font-size: calc(0.5em + 0.75vw);
+}
+
+.exp-job {
+    margin-bottom: -0.3em;
+    font-size: calc(0.5em + 1.25vw);
+}
+
+.exp-pos {
+    font-style: italic;
+    font-size: calc(0.5em + 1vw);
+}
+
 #johndeere:hover {
     content: url('../imgs/logos/color/johndeere.png');
 }
@@ -278,21 +293,6 @@ ul li a:hover {
 
 .northeastern:hover {
     content: url('../imgs/logos/color/northeastern.png');
-}
-
-.exp-dur {
-    margin: -1em 0;
-    font-size: calc(0.5em + 0.75vw);
-}
-
-.exp-job {
-    margin-bottom: -0.3em;
-    font-size: calc(0.5em + 1.25vw);
-}
-
-.exp-pos {
-    font-style: italic;
-    font-size: calc(0.5em + 1vw);
 }
 
 /* SKILLS BOX ELEMENT STYLING */

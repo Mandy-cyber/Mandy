@@ -114,6 +114,23 @@
         margin-top: 4vh !important;
     }
 
+    #tech-row4 {
+        flex-direction: row !important;
+    }
+
+    .exp-box {
+        flex: 1 1 calc(45% - 1em); /* Adjust width and margin to fit two per row */
+        margin: 1% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .exp-job {
+        font-size: calc(0.5em + 1vw);
+    }
+
     #exp-box-9 {
         display: none;
     }

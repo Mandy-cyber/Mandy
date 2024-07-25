@@ -16,6 +16,8 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.desktop-hide { display: none; }
+
 /* BOX STYLING */
 /* ------------------------------------------------- */
 
