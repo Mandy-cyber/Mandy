@@ -55,6 +55,14 @@
                 url('../imgs/books/imaginary-friend.png'),
                 url('../imgs/books/rage-of-dragons.png'),
                 url('../imgs/color_recipes.png'),
+                url('../imgs/people/color/lena.png'),
+                url('../imgs/people/color/belle.png'),
+                url('../imgs/people/color/renee.png'),
+                url('../imgs/people/color/maddy.png'),
+                url('../imgs/people/color/vy.png'),
+                url('../imgs/people/color/sarah.png'),
+                url('../imgs/people/color/olivia.png'),
+                url('../imgs/people/color/remi.png'),
 }
 
 
@@ -291,6 +299,19 @@
     margin-bottom: 2.5vh;
 }
 
+.person img:hover {
+    cursor: pointer;
+}
+
 .person-name {
     margin-top: 0vh;
 }
+
+#lena img:hover { content: url("../imgs/people/color/lena.png"); }
+#belle img:hover { content: url("../imgs/people/color/belle.png"); }
+#renee img:hover { content: url("../imgs/people/color/renee.png"); }
+#maddy img:hover { content: url("../imgs/people/color/maddy.png"); }
+#vy img:hover { content: url("../imgs/people/color/vy.png"); }
+#sarah img:hover { content: url("../imgs/people/color/sarah.png"); }
+#olivia img:hover { content: url("../imgs/people/color/olivia.png"); }
+#remi img:hover { content: url("../imgs/people/color/remi.png"); }
