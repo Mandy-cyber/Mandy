@@ -77,7 +77,6 @@
 
     /* tech page stuff */
     /* ------------------------- */
-    
     #navbar-logo {
         margin-left: 35% !important;
     }
@@ -182,12 +181,40 @@
         font-size: 1em !important;
     }
 
+    /* boredom page stuff */
+    /* ------------------------- */
+    #boredom-body {
+        overflow-x: hidden !important;
+        margin-top: 1vh !important;
+    }
+
+    .space-box {
+        margin-left: 5vw !important;
+        margin-right: 5vw !important;
+        max-width: 92vw;
+    }
+
+    #books-title-box {
+        margin-top: 6vh !important;
+    }
+
+    #bookshelf-box {
+        padding: 0 30vw !important;
+    }
+
+    .book {
+        width: 30vw !important;
+    }
 }
 
 /* TABLET */
 /* ---------------------------------------------------------------- */
 @media screen and (min-width: 551px) and (max-width: 700px) {
     /* tech page stuff */
+    #boredom-body nav {
+        height: 7vh !important;
+    }
+
     nav {
         height: 6vh !important;
     }

@@ -1,0 +1,148 @@
+@import "base.css";
+@import "tech.css";
+
+/* GENERAL STYLING */
+/* ------------------------------------------------- */
+#boredom-body {
+    font-family: 'Glacial Indifference', sans-serif;
+}
+
+.space-box {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.heading-subheading {
+    justify-content: center;
+    align-items: center;
+}
+
+.subheading {
+    margin-top: -0.5vh;
+}
+
+.subheading span {
+    font-style: italic;
+}
+
+#preload-boredom-images {
+    display: none;
+    background: url('../imgs/books/time-war.png'),
+                url('../imgs/books/saga.png'),
+                url('../imgs/books/popisho.png'),
+                url('../imgs/books/death.png'),
+                url('../imgs/books/fifth-season.png'),
+                url('../imgs/books/honey-girl.png'),
+                url('../imgs/books/sunbeam.png'),
+                url('../imgs/books/heir-of-fire.png'),
+                url('../imgs/books/black-sun.png'),
+                url('../imgs/books/musical-youth.png'),
+                url('../imgs/books/it.png'),
+                url('../imgs/books/misery.png'),
+                url('../imgs/books/hint.png'),
+                url('../imgs/books/tea.png'),
+                url('../imgs/books/tea-dragon-society.png'),
+                url('../imgs/books/spirits.png'),
+                url('../imgs/books/love-after-love.png'),
+                url('../imgs/books/green-gables.png'),
+                url('../imgs/books/cujo.png'),
+                url('../imgs/books/leopard.png'),
+                url('../imgs/books/final-empire.png'),
+                url('../imgs/books/nearby-bushes.png'),
+                url('../imgs/books/imaginary-friend.png'),
+                url('../imgs/books/rage-of-dragons.png'),
+}
+
+
+/* BOOKS & BOOKSHELF STYLING */
+/* ------------------------------------------------- */
+
+#books-title-box {
+    margin-top: 4vh;
+}
+
+#bookshelf-box {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    box-sizing: content-box;
+}
+
+#bookshelf-box::-webkit-scrollbar, #books::-webkit-scrollbar {
+    display: none;
+}
+
+#books {
+    display: inline-flex;
+    flex-direction: row;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 7vw;
+    box-sizing: border-box;
+    margin-left: 470vw;
+    justify-content: flex-start;
+}
+
+.book {
+    width: 16vw;
+    height: 100%;
+    scroll-snap-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.book:hover {
+    cursor: pointer;
+}
+
+.book img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.book.active {
+    width: 18vw;
+    background-color: transparent;
+}
+
+#time-war img:hover { content: url('../imgs/books/time-war.png'); }
+#saga img:hover { content: url('../imgs/books/saga.png'); }
+#popisho img:hover { content: url('../imgs/books/popisho.png'); }
+#death img:hover { content: url('../imgs/books/death.png'); }
+#fifth-season img:hover { content: url('../imgs/books/fifth-season.png'); }
+#honey-girl img:hover { content: url('../imgs/books/honey-girl.png'); }
+#sunbeam img:hover { content: url('../imgs/books/sunbeam.png'); }
+#heir-of-fire img:hover { content: url('../imgs/books/heir-of-fire.png'); }
+#black-sun img:hover { content: url('../imgs/books/black-sun.png'); }
+#musical-youth img:hover { content: url('../imgs/books/musical-youth.png'); }
+#it img:hover { content: url('../imgs/books/it.png'); }
+#misery img:hover { content: url('../imgs/books/misery.png'); }
+#hint img:hover { content: url('../imgs/books/hint.png'); }
+#tea img:hover { content: url('../imgs/books/tea.png'); }
+#tea-dragon-society img:hover { content: url('../imgs/books/tea-dragon-society.png'); }
+#spirits img:hover { content: url('../imgs/books/spirits.png'); }
+#love-after-love img:hover { content: url('../imgs/books/love-after-love.png'); }
+#green-gables img:hover { content: url('../imgs/books/green-gables.png'); }
+#cujo img:hover { content: url('../imgs/books/cujo.png'); }
+#leopard img:hover { content: url('../imgs/books/leopard.png'); }
+#final-empire img:hover { content: url('../imgs/books/final-empire.png'); }
+#nearby-bushes img:hover { content: url('../imgs/books/nearby-bushes.png'); }
+#imaginary-friend img:hover { content: url('../imgs/books/imaginary-friend.png'); }
+#rage-of-dragons img:hover { content: url('../imgs/books/rage-of-dragons.png'); }
