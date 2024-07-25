@@ -235,6 +235,10 @@
         margin-bottom: 2.5vh;
     }
 
+    #food-button {
+        height: 60vw !important;
+    }
+
     /* recipe stuff */
     .modal-content {
         width: 75% !important;

@@ -173,9 +173,14 @@
     margin-bottom: 2.5vh;
 }
 
+.embed-container {
+    width: 100%;
+}
+
 #food-button {
     background-color: white;
     border: none;
+    height: 30vw;
 }
 
 #food-button img:hover {
