@@ -202,6 +202,11 @@
         padding: 0 30vw !important;
     }
 
+    #books {
+        margin-left: 800vw !important;
+        padding-right: 45vw !important;
+    }
+
     .book {
         width: 30vw !important;
     }

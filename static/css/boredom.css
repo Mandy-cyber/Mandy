@@ -92,6 +92,7 @@
     gap: 7vw;
     box-sizing: border-box;
     margin-left: 470vw;
+    padding-right: 10vw;
     justify-content: flex-start;
 }
 
