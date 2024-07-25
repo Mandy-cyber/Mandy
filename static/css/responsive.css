@@ -184,6 +184,10 @@
         font-size: 1.1em !important;
     }
 
+    .tooltip .tooltiptext {
+        width: 35vw !important;
+    }
+
     /* markdown stuff */
     #edu-title-box, #education-code, .tech-button {
         display: none !important;
