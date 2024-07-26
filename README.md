@@ -2,4 +2,4 @@
 
 ###  [mandilocs.com](https://www.mandilocs.com)
 
-<img src="static/imgs/dancing.png">
+<img src="static/imgs/dance2.png">
