@@ -273,6 +273,22 @@
         width: calc(50% - 1em) !important;
         margin-bottom: -2.5vh !important;
     }
+
+    /* quick links page */
+    /* ------------------------- */
+    #profile-pic {
+        width: 30vw !important;
+        height: 30vw !important;
+    }
+
+    #profile-pic img {
+        width: 30vw !important;
+    }
+
+    .link {
+        width: 52vw !important;
+    }
+
 }
 
 /* TABLET */
