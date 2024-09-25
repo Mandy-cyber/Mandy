@@ -13,7 +13,8 @@
 
 #preload-images {
     display: none;
-    background: url('../imgs/logos/color/johndeere.png'),
+    background: url('../imgs/logos/color/reprally.png'),
+                url('../imgs/logos/color/johndeere.png'),
                 url('../imgs/logos/color/nf.png'),
                 url('../imgs/logos/color/hbp.png'),
                 url('../imgs/logos/color/starapple.png'),
@@ -269,6 +270,10 @@ ul li a:hover {
 .exp-pos {
     font-style: italic;
     font-size: calc(0.5em + 1vw);
+}
+
+#reprally:hover {
+    content: url('../imgs/logos/color/reprally.png');
 }
 
 #johndeere:hover {
