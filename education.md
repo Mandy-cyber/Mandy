@@ -5,8 +5,11 @@
 **Relevant Courses**:
 - Algorithms & Data
 - Object Oriented Design
-- Computer Systems
-- Network Fundamentals
 - System Security
+- Network Security
+- Info. Sys Forensics
+- Computer Systems
 - Theory of Computation
+- Software Engineering
+- Cryptography
 - Interm. Programming with Data

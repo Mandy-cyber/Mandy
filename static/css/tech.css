@@ -19,6 +19,8 @@
                 url('../imgs/logos/color/hbp.png'),
                 url('../imgs/logos/color/starapple.png'),
                 url('../imgs/logos/color/recordedfuture.png'),
+                url('../imgs/logos/color/netflix.png'),
+                url('../imgs/logos/color/typeface.png'),
                 url('../imgs/logos/color/northeastern.png'),
                 url('../imgs/logos/color/colorstack.png'),
                 url('../imgs/logos/color/rtc.png'),
@@ -270,6 +272,14 @@ ul li a:hover {
 .exp-pos {
     font-style: italic;
     font-size: calc(0.5em + 1vw);
+}
+
+#typeface:hover {
+    content: url('../imgs/logos/color/typeface.png');
+}
+
+#netflix:hover {
+    content: url('../imgs/logos/color/netflix.png');
 }
 
 #reprally:hover {
