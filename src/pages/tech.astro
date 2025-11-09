@@ -1,0 +1,156 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FloatingIcons from '../components/FloatingIcons.astro';
+import TechNavbar from '../components/TechNavbar.astro';
+import ExperienceCard from '../components/ExperienceCard.astro';
+import ProjectSlideshow from '../components/ProjectSlideshow.astro';
+import { experiences } from '../data/experiences';
+import { skills } from '../data/skills';
+import { organizations } from '../data/organizations';
+---
+
+<BaseLayout
+  title="Mandyland - Tech"
+  description="Mandy's tech skills, experiences, and projects"
+  includeFontAwesome={true}
+  includeAnimateCSS={true}
+  includeZeroMD={true}
+>
+  <link slot="head" rel="stylesheet" href="/static/css/tech.css">
+
+  <body id="tech-body">
+    <div id="preload-images"></div>
+
+    <FloatingIcons />
+    <TechNavbar />
+
+    <!-- BOXES -->
+    <div class="container">
+
+      <!-- row1: skills & education title boxes -->
+      <div id="tech-row1" class="tech-row">
+        <div class="box" id="skills-title-box">
+          <h2 class="box-h2">Skills <span id="and-education">& Education</span></h2>
+        </div>
+        <div class="box" id="edu-title-box">
+          <h2 class="box-h2">Education</h2>
+        </div>
+      </div>
+
+      <!-- row2: skills & education content boxes -->
+      <div id="tech-row2" class="tech-row">
+        <!-- skills -->
+        <div class="box" id="skills-box">
+          <div id="skills-box-vertical" class="box-vertical">
+            <div id="skill-badges">
+              {skills.map((skill) => (
+                <span class={`badge tooltip skill-${skill.category}`}>
+                  {skill.name}
+                  <span class="tooltiptext">{skill.tooltip}</span>
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <!-- education -->
+        <div class="box" id="education-box">
+          <div id="edu-box-vertical" class="box-vertical">
+            <!-- raw code -->
+            <pre id="education-code" class="raw-code">
+              <code>
+## Northeastern University
+### B.S. in Cybersecurity
+&gt; Khoury College Honors Program
+
+**Relevant Courses**:
+- Algorithms & Data
+- Object Oriented Design
+- System Security
+- Network Security
+- Info. Sys Forensics
+- Computer Systems
+- Theory of Computation
+- Software Engineering
+- Cryptography
+- Interm. Programming with Data
+              </code>
+            </pre>
+            <button id="preview-button" class="tech-button">Preview Markdown</button>
+          </div>
+          <!-- markdown -->
+          <div id="md-vertical" class="box-vertical">
+            <zero-md src="education.md">
+              <template></template>
+            </zero-md>
+            <button id="raw-button" class="tech-button">Raw Code</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- row3: experience-title -->
+      <div id="tech-row3" class="tech-row">
+        <div class="box large" id="experience-box">
+          <h2 class="box-h2">Experience</h2>
+        </div>
+      </div>
+
+      <!-- row4: experience-grid -->
+      <div id="tech-row4" class="tech-row">
+        <div id="experience-grid">
+          {experiences.map((exp) => (
+            <ExperienceCard experience={exp} />
+          ))}
+        </div>
+      </div>
+
+      <!-- row5: projects-title & organizations-title -->
+      <div id="tech-row5" class="tech-row">
+        <div class="box" id="projects-title-box">
+          <h2 class="box-h2">Projects <span id="and-organizations">& Organizations</span></h2>
+        </div>
+        <div class="box" id="orgs-title-box">
+          <h2 class="box-h2">Organizations</h2>
+        </div>
+      </div>
+
+      <!-- row6: projects-content & organizations-content -->
+      <div id="tech-row6" class="tech-row">
+        <!-- projects -->
+        <div class="box" id="projects-box">
+          <ProjectSlideshow />
+        </div>
+
+        <!-- organizations -->
+        <div class="box" id="orgs-box">
+          <div id="orgs-vertical" class="box-vertical">
+            {organizations.map((org) => (
+              <div class="org-info-row">
+                <div class="org-img-container">
+                  <a target="_blank" href={org.url}>
+                    <img id={org.logoClass} class="exp-img" src={org.logo} alt={org.logoAlt}>
+                  </a>
+                </div>
+                <p class="org-text">{org.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      import { initFloatingIcons } from '../scripts/floating-icons';
+      import { initNavbarDropdown } from '../scripts/navbar-dropdown';
+      import { initMarkdownToggle } from '../scripts/markdown-toggle';
+      import { initSlideshow } from '../scripts/slideshow';
+
+      document.addEventListener('DOMContentLoaded', () => {
+        initFloatingIcons();
+        initNavbarDropdown();
+        initMarkdownToggle();
+        initSlideshow();
+      });
+    </script>
+  </body>
+</BaseLayout>

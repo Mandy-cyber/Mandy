@@ -1,0 +1,24 @@
+---
+import { projects } from '../data/projects';
+---
+
+<div id="slideshow-container">
+  <div id="tech-slideshow">
+    {projects.map((project) => (
+      <div class="slides fade">
+        <a href={project.githubUrl} target="_blank" class="slide-links">
+          <img id={project.id} src={project.image} style="width:100%" alt={project.name}>
+        </a>
+      </div>
+    ))}
+  </div>
+
+  <!-- slideshow progress dots & arrows -->
+  <div id="progress-dots">
+    <span id="prev" onclick="moveSlides(-1)">&lt;</span>
+    {projects.map((_, index) => (
+      <span class="dot" onclick={`currentSlide(${index + 1})`}></span>
+    ))}
+    <span id="next" onclick="moveSlides(1)">&gt;</span>
+  </div>
+</div>

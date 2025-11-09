@@ -1,8 +1,0 @@
-permalink: /:name/
-
-redirects:
-  /index.html: /index/
-  /tech.html: /tech/
-  /boredom.html: /boredom/
-  /quick-links.html: /quick-links/
-  /qr.html : /qr

@@ -1,0 +1,23 @@
+---
+import type { Experience } from '../data/experiences';
+
+interface Props {
+  experience: Experience;
+}
+
+const { experience } = Astro.props;
+---
+
+<div id={experience.id} class="box exp-box">
+  <div class="exp-img-container">
+    <img
+      id={experience.logoClass}
+      class={`exp-img ${experience.logoClass}`}
+      src={experience.logo}
+      alt={experience.logoAlt}
+    >
+  </div>
+  <p class="exp-dur">{experience.duration}</p>
+  <h3 class="exp-job">{experience.company}</h3>
+  <p class="exp-pos">{experience.position}</p>
+</div>

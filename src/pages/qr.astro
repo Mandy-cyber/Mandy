@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Mandyland - QR Code"
+  description="QR code that takes you to my Quick Links page!"
+>
+  <link slot="head" rel="stylesheet" href="/static/css/qr.css">
+
+  <body id="qr-body">
+    <div id="qr-container" class="box space-box">
+      <div class="box-vertical heading-subheading">
+        <h2>Scan Me!</h2>
+        <p class="subheading">... to see links to my linkedin, github, and the <span>(rest)</span> of my personal website</p>
+        <div id="qr-img-container">
+          <img src="/static/imgs/qr.png" alt="A qr code to be scanned">
+        </div>
+      </div>
+    </div>
+  </body>
+</BaseLayout>

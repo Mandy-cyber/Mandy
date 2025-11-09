@@ -1,0 +1,47 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  includeFontAwesome?: boolean;
+  includeAnimateCSS?: boolean;
+  includeZeroMD?: boolean;
+}
+
+const {
+  title,
+  description,
+  includeFontAwesome = false,
+  includeAnimateCSS = false,
+  includeZeroMD = false
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Amanda Rodriques">
+  <meta name="description" content={description}>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/static/imgs/logo.png">
+
+  {includeFontAwesome && (
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  )}
+
+  {includeAnimateCSS && (
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  )}
+
+  {includeZeroMD && (
+    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+  )}
+
+  <slot name="head" />
+
+  <title>{title}</title>
+</head>
+<body>
+  <slot />
+</body>
+</html>

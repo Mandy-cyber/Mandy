@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Mandyland - Quick Links"
+  description="Links to my LinkedIn, GitHub, and personal website"
+>
+  <link slot="head" rel="stylesheet" href="/static/css/quick_links.css">
+  <script slot="head" src="https://kit.fontawesome.com/4114ffcf3d.js" crossorigin="anonymous" is:inline></script>
+
+  <body id="quick-links-body">
+    <div id="links-container">
+      <!-- profile pic -->
+      <div id="profile-pic"><img src="/static/imgs/logo.png" alt="Mandilocs logo"></div>
+      <!-- links -->
+      <div id="links-box" class="box">
+        <!-- github -->
+        <a href="https://www.github.com/Mandy-cyber" target="_blank">
+          <div id="github-box" class="link box">
+            <i class="fa-brands fa-github"></i>
+            <p>GitHub</p>
+          </div>
+        </a>
+        <!-- linkedin -->
+        <a href="https://www.linkedin.com/in/amanda-rodriques" target="_blank">
+          <div id="linkedin-box" class="link box">
+            <i class="fa-brands fa-linkedin"></i>
+            <p>LinkedIn</p>
+          </div>
+        </a>
+        <!-- personal website -->
+        <a href="https://www.mandilocs.com" target="_blank">
+          <div id="website-box" class="link box">
+            <i class="fa-solid fa-globe"></i>
+            <p>Website</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</BaseLayout>

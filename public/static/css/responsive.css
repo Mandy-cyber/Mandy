@@ -1,0 +1,384 @@
+/* MOBILE */
+/* ---------------------------------------------------------------- */
+@media screen and (max-width: 550px) {
+
+    body {
+        padding: 0px;
+        margin-left: -2vw !important;
+    }
+
+    .desktop-hide {
+        display: flex !important;
+    }
+
+    .mobile-hide {
+        display: none !important;
+    }
+
+
+    /* homepage comic stuff */
+    /* ------------------------- */
+    .carousel {
+        flex-direction: column;
+    }
+
+    .carousel-page {
+        flex-direction: column !important;
+        margin-bottom: -2vh !important;
+        scroll-snap-align: none !important;
+    }
+
+    #box1 {
+        margin-top: 25vh;
+        margin-bottom: 37vh;
+    }
+
+    .box {
+        width: 100% !important;
+    }
+
+    #box1 {
+        padding-top: 1em;
+        padding-bottom: 0em !important;
+    }
+
+    /* navbar */
+    nav {
+        border: none !important;
+        position: relative !important;
+    }
+
+    #navbar-logo {
+        margin: 2vh 10vw;
+        margin-bottom: -5vh;
+        width: 30% !important;
+        height: auto;
+    }
+
+    .mobile-ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5vh;
+        margin-bottom: -2vh;
+        justify-content: center;
+        padding-left: 3vw;
+        padding-bottom: 1vh;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+
+    .mobile-ul li {
+        font-size: 1.5em;
+    }
+
+    .sticky {
+        display: none;
+    }
+
+    /* Swap animation gif */
+    #hey-im-mobile {
+        display: block;
+    }
+
+    #hey-im-desktop {
+        display: none;
+    }
+
+    /* tech page stuff */
+    /* ------------------------- */
+    #navbar-logo {
+        margin-left: 35% !important;
+    }
+
+    .floating-icon {
+        width: 3em !important;
+        height: 3em !important;
+    }
+
+    #tech-body {
+        padding-top: 10px;
+        overflow-x: hidden;
+    }
+
+    nav, nav ul, nav ul li, nav ul li a  {
+        display: none;
+    }
+
+    #and-education {
+        display: block !important;
+    }
+
+    /* boxes &  rows */
+    .tech-row {
+        flex-direction: column !important;
+        margin-top: 4vh !important;
+    }
+
+    #tech-row4 {
+        flex-direction: row !important;
+    }
+
+    .exp-box {
+        flex: 1 1 calc(45% - 1em); /* Adjust width and margin to fit two per row */
+        margin: 1% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .exp-job {
+        font-size: calc(0.5em + 1vw);
+    }
+
+    #exp-box-9 {
+        display: none;
+    }
+
+    /* projects */
+    #projects-box {
+        margin-bottom: 4vh;
+    }
+
+    .proj-text, .dot {
+        display: none !important;
+    }
+
+    #and-organizations {
+        display: flex !important;
+    }
+
+    /* organizations */
+    #orgs-title-box {
+        display: none;
+    }
+
+    .org-text {
+        font-size: 1.20em !important;
+    }
+
+    .org-info-row {
+        margin-left: 4vw !important;
+    }
+
+    #colorstack-row {
+        margin-bottom: -4vh;
+    }
+
+    #rtc-row {
+        margin-bottom: -2.5vh;
+    }
+
+    .org-img-container {
+        width: 30vw !important;
+        height: auto !important;
+        margin: 1em 3vw !important;
+    }
+
+    /* badges */
+    #skills-box {
+        margin-bottom: 4vh;
+    }
+    
+    .badge {
+        font-size: 1.1em !important;
+    }
+
+    .tooltip .tooltiptext {
+        width: 35vw !important;
+    }
+
+    /* markdown stuff */
+    #edu-title-box, #education-code, .tech-button {
+        display: none !important;
+    }
+
+    zero-md {
+        display: block !important;
+        border: none !important;
+    }
+
+    /* font sizes */
+    .exp-dur {
+        font-size: 0.8em !important;
+    }
+
+    .exp-job {
+        font-size: 1.25em !important;
+    }
+
+    .exp-pos {
+        font-size: 1em !important;
+    }
+
+    /* boredom page stuff */
+    /* ------------------------- */
+    #boredom-body {
+        overflow-x: hidden !important;
+        margin-top: 1vh !important;
+    }
+
+    .space-box {
+        margin-left: 5vw !important;
+        margin-right: 5vw !important;
+        max-width: 92vw;
+    }
+
+    #books-title-box {
+        margin-top: 6vh !important;
+    }
+
+    #bookshelf-box {
+        padding: 0 30vw !important;
+    }
+
+    #books {
+        margin-left: 800vw !important;
+        padding-right: 45vw !important;
+    }
+
+    .book {
+        width: 30vw !important;
+    }
+
+    /* row stuff */
+    .boredom-row {
+        display: flex;
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    #food-box, #crochet-box {
+        margin-bottom: 4vh !important;
+    }
+
+    #food-button {
+        height: 70vw !important;
+    }
+
+    /* recipe stuff */
+    .modal-content {
+        width: 75% !important;
+        top: 10% !important;
+        -ms-overflow-style: none !important;
+        scrollbar-width: none !important;
+    }
+
+    .modal-content::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    /* person stuff */
+    .person {
+        width: calc(50% - 1em) !important;
+        margin-bottom: -2.5vh !important;
+    }
+
+    /* quick links page */
+    /* ------------------------- */
+    #profile-pic {
+        width: 30vw !important;
+        height: 30vw !important;
+    }
+
+    #profile-pic img {
+        width: 30vw !important;
+    }
+
+    .link {
+        width: 52vw !important;
+    }
+
+}
+
+/* TABLET */
+/* ---------------------------------------------------------------- */
+@media screen and (min-width: 551px) and (max-width: 700px) {
+    /* tech page stuff */
+    #boredom-body nav {
+        height: 7vh !important;
+    }
+
+    nav {
+        height: 6vh !important;
+    }
+
+    #navbar-logo {
+        display: none;
+    }
+
+    #tech-navbar ul {
+        margin-top: 3.5vh !important;
+    }
+
+    ul {
+        margin: 2vh !important;
+    }
+
+    .badge {
+        font-size: 1em !important;
+    }
+
+    #education-code, #preview-button {
+        display: none !important;
+    }
+
+    zero-md {
+        display: block !important;
+        border: none !important;
+    }
+
+    .double-underline::after {
+        top: 3.25vh !important;
+        width: 7.25vw !important;
+    }
+}
+
+
+/* DESKTOP */
+/* ---------------------------------------------------------------- */
+@media screen and (min-width: 551px) {
+    /* home page comics */
+    /* ------------------------- */
+    .carousel {
+        scroll-snap-stop: always;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+    }
+    
+    /* bring comic pages lower on the page */
+    .carousel-page {
+        margin-top: 20vh;
+    }
+
+    /* Swap animation gif */
+    #hey-im-mobile {
+        display: none;
+    }
+
+    #hey-im-desktop {
+        display: block;
+    }
+
+    /* tech page */
+    /* ------------------------- */
+
+    nav {
+        height: 10vh;
+    }
+
+    #navbar-a {
+        width: 10%;
+        height: auto;
+    }
+
+    #mobile-navbar {
+        display: none !important;
+    }
+
+    /* boxes & rows */
+    .exp-box {
+        flex: 1 1 calc(33.333% - 1em);
+    }
+}
