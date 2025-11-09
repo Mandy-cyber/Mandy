@@ -25,15 +25,22 @@ export function initSlideshow(): void {
   }
 
   // arrow key navigation
-  document.addEventListener('keydown', function(event) {
+  const handleKeydown = function(event: KeyboardEvent) {
+    const slides = document.getElementsByClassName("slides");
+    if (slides.length === 0) return;
+
     if (event.key === 'ArrowLeft') {
+      event.preventDefault();
       clearInterval(slideInterval);
       (window as any).moveSlides(-1);
     } else if (event.key === 'ArrowRight') {
+      event.preventDefault();
       clearInterval(slideInterval);
       (window as any).moveSlides(1);
     }
-  });
+  };
+
+  document.addEventListener('keydown', handleKeydown);
 }
 
 function autoSlide(): void {

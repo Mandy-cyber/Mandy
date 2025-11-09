@@ -13,7 +13,7 @@ export const experiences: Experience[] = [
     id: "exp-12",
     company: "Typeface",
     position: "Product Security Intern",
-    duration: "Incoming September 2025",
+    duration: "September 2025 - Present",
     logo: "/static/imgs/logos/bw/typeface.png",
     logoAlt: "TypefaceAI logo",
     logoClass: "typeface"
@@ -22,7 +22,7 @@ export const experiences: Experience[] = [
     id: "exp-11",
     company: "Netflix",
     position: "Software Engineering Intern",
-    duration: "May 2025 - Present",
+    duration: "May 2025 - August 2025",
     logo: "/static/imgs/logos/bw/netflix.png",
     logoAlt: "Netflix logo",
     logoClass: "netflix"
