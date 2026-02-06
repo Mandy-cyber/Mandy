@@ -16,9 +16,11 @@ export const skills: Skill[] = [
   { name: "Java & JUnit5", tooltip: "Proficient", category: "lang" },
   { name: "HTML", tooltip: "Fluent", category: "lang" },
   { name: "CSS", tooltip: "Fluent", category: "lang" },
+  { name: "Bash", tooltip: "Proficient", category: "lang"  },
   { name: "(SQL)ite", tooltip: "Proficient", category: "lang" },
   { name: "Racket", tooltip: "Proficient", category: "lang" },
   { name: "Typescript/JS", tooltip: "Proficient", category: "lang" },
+  { name: "Assembly", tooltip: "Proficient", category: "lang" },
 
   // Tools
   { name: "GitHub/GitLab", tooltip: "Me 🤝 GitHub", category: "tool" },
@@ -27,5 +29,7 @@ export const skills: Skill[] = [
   { name: "Docker", tooltip: "Yay... Dockerfiles...", category: "tool" },
   { name: "Amazon S3", tooltip: "Lambdas are for cool kids (me)!", category: "tool" },
   { name: "Vim", tooltip: "Well specifically Neovim (close enough)", category: "tool" },
-  { name: "DynamoDB", tooltip: "Would not wish this upon my worst enemy", category: "tool" }
+  { name: "DynamoDB", tooltip: "Would not wish this upon my worst enemy", category: "tool" },
+  { name: "Kubernetes", tooltip: "My life was changed... but at what cost??", category: "tool" },
+  { name: "Scrapy", tooltip: "Spiderman fears my web scraping/crawling abilities!", category: "tool" },
 ];

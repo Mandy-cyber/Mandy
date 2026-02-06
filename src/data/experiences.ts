@@ -10,10 +10,19 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    id: "exp-13",
+    company: "NU: Khoury College",
+    position: "TA - Professional Development",
+    duration: "January 2026 - Present",
+    logo: "/static/imgs/logos/bw/northeastern.png",
+    logoAlt: "Northeastern University logo",
+    logoClass: "northeastern"
+  },
+  {
     id: "exp-12",
     company: "Typeface",
     position: "Product Security Intern",
-    duration: "September 2025 - Present",
+    duration: "September 2025 - December 2025",
     logo: "/static/imgs/logos/bw/typeface.png",
     logoAlt: "TypefaceAI logo",
     logoClass: "typeface"
